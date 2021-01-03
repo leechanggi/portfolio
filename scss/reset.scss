@@ -1,0 +1,83 @@
+@charset 'utf-8';
+@import "design";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+select {
+    border-radius: none;
+    outline: none
+}
+
+fieldset {
+    border: none;
+}
+
+legend,
+caption {
+    position: absolute;
+    left: -9999px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+    border: none;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+address,
+em,
+i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+    display: none;
+}

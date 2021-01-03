@@ -1,0 +1,47 @@
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #081460;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.html {
+  display: inline-block;
+  width: 60px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 12.5px;
+  color: #fff;
+  background-color: #E44D26;
+  text-align: center;
+  font-size: 14px;
+}
+
+.css {
+  display: inline-block;
+  width: 60px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 12.5px;
+  color: #fff;
+  background-color: #42A5F5;
+  text-align: center;
+  font-size: 14px;
+}
+
+.js {
+  display: inline-block;
+  width: 60px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 12.5px;
+  color: #fff;
+  background-color: #FFCA28;
+  text-align: center;
+  font-size: 14px;
+}
+/*# sourceMappingURL=design.css.map */

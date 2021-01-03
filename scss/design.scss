@@ -1,0 +1,66 @@
+@charset 'utf-8';
+$mainColor-1: #081460;
+$mainColor-2: #FF5D86;
+$mainColor-3: #FF933B;
+$mainColor-4: #FFCE4B;
+$subColor-1: #1A32C6;
+
+
+#particles-js{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $mainColor-1;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+@mixin els {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@mixin lineClamp($h, $num) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $num;
+    height: $h;
+    overflow: hidden;
+}
+
+.html{
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 12.5px;
+    color: #fff;
+    background-color: #E44D26;
+    text-align: center;
+    font-size: 14px;
+}
+.css{
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 12.5px;
+    color: #fff;
+    background-color: #42A5F5;
+    text-align: center;
+    font-size: 14px;
+}
+.js{
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 12.5px;
+    color: #fff;
+    background-color: #FFCA28;
+    text-align: center;
+    font-size: 14px;
+}

@@ -311,7 +311,7 @@ body {
 #container .row2_wrap {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 960px;
 }
 
 #container .row2_wrap .row2 {
@@ -499,6 +499,7 @@ body {
 #container .row3_wrap .row3 .row3_text .row3_text_section1 .row3_text_section1-2 h4 {
   width: 100%;
   font-size: 24px;
+  font-weight: 700;
 }
 
 #container .row3_wrap .row3 .row3_text .row3_text_section1 .row3_text_section1-2 h4 span {
@@ -665,6 +666,7 @@ body {
 #container .row4_wrap .row4 .row4_text .row4_text_section1 .row4_text_section1-2 h4 {
   width: 100%;
   font-size: 24px;
+  font-weight: 700;
 }
 
 #container .row4_wrap .row4 .row4_text .row4_text_section1 .row4_text_section1-2 h4 span {
@@ -831,6 +833,7 @@ body {
 #container .row5_wrap .row5 .row5_text .row5_text_section1 .row5_text_section1-2 h4 {
   width: 100%;
   font-size: 24px;
+  font-weight: 700;
 }
 
 #container .row5_wrap .row5 .row5_text .row5_text_section1 .row5_text_section1-2 h4 span {
@@ -947,5 +950,113 @@ body {
 
 #container .row5_wrap .row5 .row5_text .row5_text_section2 .row5_table tbody > tr > td:nth-of-type(2) {
   text-indent: 90px;
+}
+
+#container .row6_wrap {
+  position: relative;
+  width: 100%;
+  height: 960px;
+  padding-bottom: 100px;
+}
+
+#container .row6_wrap .row6 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#container .row6_wrap .row6 .row6_title {
+  text-align: center;
+  padding: 90px 0 40px;
+}
+
+#container .row6_wrap .row6 .row6_title h2 {
+  font-size: 44px;
+  font-weight: 900;
+}
+
+#container .row6_wrap .row6 .row6_title h2 span {
+  color: #FFCE4B;
+}
+
+#container .row6_wrap .row6 .row6_title h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#container .row6_wrap .row6 .row6_text {
+  position: relative;
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px;
+}
+
+#container .row6_wrap .row6 .row6_text .card {
+  position: relative;
+  min-width: 300px;
+  width: calc((100% - 60px) / 3);
+  height: 215px;
+  background: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#container .row6_wrap .row6 .row6_text .card:hover {
+  height: 420px;
+}
+
+#container .row6_wrap .row6 .row6_text .card:hover .txtBox {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+#container .row6_wrap .row6 .row6_text .card .imgBox {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 20px;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+#container .row6_wrap .row6 .row6_text .card .imgBox img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+#container .row6_wrap .row6 .row6_text .card .txtBox {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */

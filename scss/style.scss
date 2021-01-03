@@ -129,7 +129,7 @@ body {
     .row2_wrap{
         position: relative;
         width: 100%;
-        height: 100vh;
+        height: 960px;
         .row2{
             width: 1200px;
             margin: 0 auto;
@@ -288,6 +288,7 @@ body {
                         h4{
                             width: 100%;
                             font-size: 24px;
+                            font-weight: 700;
                             span{
                                 width: 20%;
                                 display: inline-block;
@@ -435,6 +436,7 @@ body {
                         h4{
                             width: 100%;
                             font-size: 24px;
+                            font-weight: 700;
                             span{
                                 width: 20%;
                                 display: inline-block;
@@ -582,6 +584,7 @@ body {
                         h4{
                             width: 100%;
                             font-size: 24px;
+                            font-weight: 700;
                             span{
                                 width: 20%;
                                 display: inline-block;
@@ -687,6 +690,84 @@ body {
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+    .row6_wrap{
+        position: relative;
+        width: 100%;
+        height: 960px;
+        padding-bottom: 100px;
+        .row6{
+            width: 1200px;
+            margin: 0 auto;
+            .row6_title{
+                text-align: center;
+                padding: 90px 0 40px;
+                h2{
+                    font-size: 44px;
+                    font-weight: 900;
+                    span{
+                        color: $mainColor-4;
+                    }
+                }
+                h3{
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+            .row6_text{
+                position: relative;
+                width: 1200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 30px;
+                .card{
+                    position: relative;
+                    min-width: 300px;
+                    width: calc((100% - 60px) / 3);
+                    height: 215px;
+                    background: #fff;
+                    margin: 30px 10px;
+                    padding: 20px 15px;
+                    display: flex;
+                    flex-direction: column;
+                    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                        height: 420px;
+                        .txtBox{
+                            visibility: visible;
+                            opacity: 1;
+                            margin-top: -40px;
+                            transition-delay: 0.3s;
+                        }
+                    }
+                    .imgBox{
+                        position: relative;
+                        width: 260px;
+                        height: 260px;
+                        top: -60px;
+                        left: 20px;
+                        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+                        img{
+                            max-width: 100%;
+                            border-radius: 4px;
+                        }
+                    }
+                    .txtBox{
+                        position: relative;
+                        margin-top: -140px;
+                        padding: 10px 15px;
+                        text-align: center;
+                        color: #111;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: 0.3s ease-in-out;
                     }
                 }
             }

@@ -25,7 +25,7 @@ body {
         height: 40px;
         background-color: $mainColor-1;
 
-        >.gnb_wrap {
+        >.gnb-wrap {
             >.gnb {
                 >ul {
                     line-height: 40px;
@@ -43,7 +43,7 @@ body {
         }
     }
 
-    .gnb_wrap {
+    .gnb-wrap {
         width: 100%;
         height: 100%;
 
@@ -58,7 +58,7 @@ body {
                 clear: both;
                 top: 0;
                 right: 0;
-                width: 344px;
+                width: 488px;
                 height: 100%;
                 line-height: 80px;
                 color: #fff;
@@ -98,7 +98,7 @@ body {
 }
 
 #container {
-    .row1_wrap {
+    .row1-wrap {
         width: 100%;
         height: 100vh;
 
@@ -145,16 +145,16 @@ body {
         }
     }
 
-    .row2_wrap {
+    .row2-wrap {
         position: relative;
         width: 100%;
-        height: 960px;
+        height: 100vh;
 
         .row2 {
             width: 1200px;
             margin: 0 auto;
 
-            .row2_title {
+            .row2-title {
                 text-align: center;
                 padding: 90px 0 40px;
 
@@ -169,7 +169,7 @@ body {
                 }
             }
 
-            .row2_text {
+            .row2-text {
                 clear: both;
                 width: 100%;
                 height: 100%;
@@ -184,7 +184,7 @@ body {
                     }
                 }
 
-                .row2_text_section1 {
+                .row2-text-section1 {
                     float: left;
                     width: 50%;
                     height: 100%;
@@ -265,7 +265,7 @@ body {
                     }
                 }
 
-                .row2_text_section2 {
+                .row2-text-section2 {
                     float: left;
                     width: 50%;
                     height: 100%;
@@ -293,7 +293,7 @@ body {
         }
     }
 
-    .row3_wrap {
+    .row3-wrap {
         position: relative;
         width: 100%;
         height: auto;
@@ -303,7 +303,7 @@ body {
             width: 1200px;
             margin: 0 auto;
 
-            .row3_title {
+            .row3-title {
                 text-align: center;
                 padding: 90px 0 40px;
 
@@ -318,19 +318,19 @@ body {
                 }
             }
 
-            .row3_text {
-                .row3_text_section1 {
+            .row3-text {
+                .row3-text-section1 {
                     width: 100%;
                     height: 400px;
                     clear: both;
 
-                    .row3_text_section1-1 {
+                    .row3-text-section1-1 {
                         float: left;
                         width: 60%;
                         height: 400px;
                     }
 
-                    .row3_text_section1-2 {
+                    .row3-text-section1-2 {
                         float: left;
                         width: 40%;
                         height: 400px;
@@ -366,7 +366,7 @@ body {
                                 }
                             }
 
-                            .row3_text_section1-2_palette {
+                            .row3-text-section1-2-palette {
                                 >ul {
                                     display: inline-block;
                                     width: calc(60% - 4px);
@@ -397,7 +397,7 @@ body {
                                 }
                             }
 
-                            .row3_text_section1-2_button {
+                            .row3-text-section1-2-button {
                                 text-align: center;
 
                                 >a {
@@ -426,8 +426,8 @@ body {
                     }
                 }
 
-                .row3_text_section2 {
-                    .row3_table {
+                .row3-text-section2 {
+                    .row3-table {
                         width: 100%;
 
                         a {
@@ -471,7 +471,7 @@ body {
         }
     }
 
-    .row4_wrap {
+    .row4-wrap {
         position: relative;
         width: 100%;
         height: auto;
@@ -481,7 +481,7 @@ body {
             width: 1200px;
             margin: 0 auto;
 
-            .row4_title {
+            .row4-title {
                 text-align: center;
                 padding: 90px 0 40px;
 
@@ -496,19 +496,19 @@ body {
                 }
             }
 
-            .row4_text {
-                .row4_text_section1 {
+            .row4-text {
+                .row4-text-section1 {
                     width: 100%;
                     height: 400px;
                     clear: both;
 
-                    .row4_text_section1-1 {
+                    .row4-text-section1-1 {
                         float: left;
                         width: 60%;
                         height: 400px;
                     }
 
-                    .row4_text_section1-2 {
+                    .row4-text-section1-2 {
                         float: left;
                         width: 40%;
                         height: 400px;
@@ -544,7 +544,7 @@ body {
                                 }
                             }
 
-                            .row4_text_section1-2_palette {
+                            .row4-text-section1-2-palette {
                                 >ul {
                                     display: inline-block;
                                     width: calc(60% - 4px);
@@ -575,7 +575,7 @@ body {
                                 }
                             }
 
-                            .row4_text_section1-2_button {
+                            .row4-text-section1-2-button {
                                 text-align: center;
 
                                 >a {
@@ -604,8 +604,8 @@ body {
                     }
                 }
 
-                .row4_text_section2 {
-                    .row4_table {
+                .row4-text-section2 {
+                    .row4-table {
                         width: 100%;
 
                         a {
@@ -649,7 +649,7 @@ body {
         }
     }
 
-    .row5_wrap {
+    .row5-wrap {
         position: relative;
         width: 100%;
         height: auto;
@@ -659,7 +659,7 @@ body {
             width: 1200px;
             margin: 0 auto;
 
-            .row5_title {
+            .row5-title {
                 text-align: center;
                 padding: 90px 0 40px;
 
@@ -674,19 +674,19 @@ body {
                 }
             }
 
-            .row5_text {
-                .row5_text_section1 {
+            .row5-text {
+                .row5-text-section1 {
                     width: 100%;
                     height: 400px;
                     clear: both;
 
-                    .row5_text_section1-1 {
+                    .row5-text-section1-1 {
                         float: left;
                         width: 60%;
                         height: 400px;
                     }
 
-                    .row5_text_section1-2 {
+                    .row5-text-section1-2 {
                         float: left;
                         width: 40%;
                         height: 400px;
@@ -722,7 +722,7 @@ body {
                                 }
                             }
 
-                            .row5_text_section1-2_palette {
+                            .row5-text-section1-2-palette {
                                 >ul {
                                     display: inline-block;
                                     width: calc(60% - 4px);
@@ -753,7 +753,7 @@ body {
                                 }
                             }
 
-                            .row5_text_section1-2_button {
+                            .row5-text-section1-2-button {
                                 text-align: center;
 
                                 >a {
@@ -782,8 +782,8 @@ body {
                     }
                 }
 
-                .row5_text_section2 {
-                    .row5_table {
+                .row5-text-section2 {
+                    .row5-table {
                         width: 100%;
 
                         a {
@@ -827,17 +827,18 @@ body {
         }
     }
 
-    .row6_wrap {
+    .row6-wrap {
         position: relative;
         width: 100%;
-        height: 960px;
+        height: auto;
         padding-bottom: 100px;
 
         .row6 {
             width: 1200px;
+            height: 100%;
             margin: 0 auto;
 
-            .row6_title {
+            .row6-title {
                 text-align: center;
                 padding: 90px 0 40px;
 
@@ -856,65 +857,178 @@ body {
                 }
             }
 
-            .row6_text {
-                position: relative;
-                width: 1200px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
-                padding: 30px;
-
-                .card {
+            .row6-text {
+                width: 100%;
+                height: 1170px;
+                clear: both;
+                .card{
+                    float: left;
                     position: relative;
-                    min-width: 300px;
-                    width: calc((100% - 60px) / 3);
-                    height: 215px;
-                    background: #fff;
-                    margin: 30px 10px;
-                    padding: 20px 15px;
-                    display: flex;
-                    flex-direction: column;
-                    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-                    transition: 0.3s ease-in-out;
-
-                    &:hover {
-                        height: 420px;
-
-                        .txtBox {
-                            visibility: visible;
-                            opacity: 1;
-                            margin-top: -40px;
-                            transition-delay: 0.3s;
+                    width: 540px;
+                    height: 360px;
+                    background: $mainColor-1;
+                    margin: 0 10px 30px 50px;
+                    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                    &:hover .cardImg, &:focus .cardImg{
+                        width: 210px;
+                        height: 140px;
+                        left: -50px;
+                        top: 30px;
+                        transition: 0.5s ease-in-out;
+                    }
+                    .cardImg{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        overflow: hidden;
+                        transition: 0.5s ease-in-out;
+                        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                    }
+                    .cardTxt{
+                        padding: 30px;
+                        color: #fff;
+                        >div{
+                            h4{
+                                font-size: 24px;
+                                font-weight: 700;
+                                padding-left: 170px;
+                            }
+                            .txt-section1{
+                                padding-left: 170px;
+                            }
                         }
                     }
-
-                    .imgBox {
-                        position: relative;
-                        width: 260px;
-                        height: 260px;
-                        top: -60px;
-                        left: 20px;
-                        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-
-                        img {
-                            max-width: 100%;
-                            border-radius: 4px;
+                    &:nth-of-type(2n){
+                        margin: 0 50px 30px 10px;
+                        &:hover .cardImg{
+                            left: unset;
+                            right: -50px;
                         }
-                    }
-
-                    .txtBox {
-                        position: relative;
-                        margin-top: -140px;
-                        padding: 10px 15px;
-                        text-align: center;
-                        color: #111;
-                        visibility: hidden;
-                        opacity: 0;
-                        transition: 0.3s ease-in-out;
+                        .cardImg{
+                            left: unset;
+                            right: 0;
+                        }
+                        .cardTxt{
+                            padding: 30px;
+                            >div{
+                                h4{
+                                    padding-left: 0;
+                                }
+                                .txt-section1{
+                                    padding-left: 0;
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
     }
+
+    .row7-wrap{
+        position: relative;
+        width: 100%;
+        .row7{
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+            .row7-title {
+                text-align: center;
+                padding: 90px 0 40px;
+
+                h2 {
+                    font-size: 44px;
+                    font-weight: 900;
+
+                    span {
+                        color: $mainColor-4;
+                    }
+                }
+
+                h3 {
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+            .row7-text{
+                width: 100%;
+                margin-bottom: 100px;
+                >.contact-form-wrap{
+                    width: 760px;
+                    text-align: center;
+                    margin: 0 auto;
+                    background-color: #f2f2f2;
+                    border-radius: 15px;
+                    padding: 50px;
+                    font-size: 20px;
+                    >form{
+                        text-align: left;
+                        div{
+                            display: block;
+                            width: 100%;
+                            margin-bottom: 60px;
+                            label{
+                                em{
+                                    color: $mainColor-2;
+                                    font-weight: 700;
+                                }
+                            }
+                            input{
+                                width: 100%;
+                                height: 40px;
+                                border: none;
+                                border-bottom: 1px solid $mainColor-1;
+                                background: transparent;
+                                text-indent: 15px;
+                                font-size: 18px;
+                            }
+                            textarea{
+                                margin-top: 10px;
+                                width: 100%;
+                                height: 160px;
+                                border: none;
+                                border-bottom: 1px solid $mainColor-1;
+                                font-size: 18px;
+                                padding: 10px;
+                            }
+                        }
+                        >.submit {
+                            display: block;
+                            width: 120px;
+                            height: 40px;
+                            line-height: 40px;
+                            border-radius: 20px;
+                            margin: 0 auto;
+                            font-size: 18px;
+                            box-shadow: 3px 3px 10px #aeaeae, -4px -4px 10px #fff;
+                            background-color: $mainColor-1;
+                            color: #fff;
+                            border: none;
+                            cursor: pointer;
+                            transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+                            -webkit-transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+                            &:hover,
+                            &:focus {
+                                background-color: $mainColor-4;
+                                color: $mainColor-1;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#footer{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+    background-color: $mainColor-1;
 }

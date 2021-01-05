@@ -12,18 +12,3 @@ function windeowResizeHandler() {
     }
 }
 $(window).trigger('resize');
-// var filter = "win16|win32|win64|mac|macintel";
-// if (navigator.platform) {
-//     if (filter.indexOf(navigator.platform.toLowerCase()) >= 0) {
-//         $(document).ready(function () {
-//             var areaWidth = $("#footer").innerWidth();
-//             $("#container").css("width", areaWidth)
-//             $(window).resize(function () {
-//                 location.reload();
-//             })
-//         })
-//     } else {}
-// }
-
-// $(function () {
-// });

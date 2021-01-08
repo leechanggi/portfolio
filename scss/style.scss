@@ -8,10 +8,13 @@ body {
     font: 16px/1.6 'Red Hat Display', 'Noto Sans KR', Malgun Gothic, "맑은 고딕", "dotum", "돋움", "AppleGothic", sans-serif;
     font-weight: normal;
     color: $mainColor-1;
+    width: 100%;
+    overflow-x: hidden;
+    word-break: keep-all;
 }
 
 #header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 80px;
     top: 0;
@@ -22,14 +25,19 @@ body {
     -webkit-transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
 
     &.on {
+        position: fixed;
+        width: 100%;
         height: 40px;
-        background-color: $mainColor-1;
+        background-color: rgba(255, 255, 255, 0.7);
+        z-index: 9999;
+        box-shadow: 3px 3px 10px #aeaeae, -4px -4px 10px #fff;
 
         >.gnb-wrap {
             >.gnb {
                 >ul {
                     line-height: 40px;
                     font-size: 18px;
+                    color: $mainColor-1;
 
                     >li {
                         >a {
@@ -95,6 +103,9 @@ body {
             }
         }
     }
+    .all-menu-wrap{
+        display: none;
+    }
 }
 
 #container {
@@ -109,7 +120,7 @@ body {
 
             .title {
                 position: relative;
-                top: 25.25773195876289vh;
+                top: 25.25773195876289vh; //245px(970)
 
                 >h1 {
                     padding-left: 40px;
@@ -148,7 +159,8 @@ body {
     .row2-wrap {
         position: relative;
         width: 100%;
-        height: 100vh;
+        height: auto;
+        margin-bottom: 100px;
 
         .row2 {
             width: 1200px;
@@ -172,7 +184,7 @@ body {
             .row2-text {
                 clear: both;
                 width: 100%;
-                height: 100%;
+                height: 619px;
 
                 >p {
                     font-size: 24px;
@@ -187,7 +199,7 @@ body {
                 .row2-text-section1 {
                     float: left;
                     width: 50%;
-                    height: 100%;
+                    height: 490px;
                     padding-left: 70px;
 
                     h3 {
@@ -268,7 +280,7 @@ body {
                 .row2-text-section2 {
                     float: left;
                     width: 50%;
-                    height: 100%;
+                    height: 490px;
                     padding-left: 40px;
 
                     ul {
@@ -439,16 +451,27 @@ body {
                         }
 
                         thead {
+                            width: 100%;
                             >tr {
                                 height: 60px;
                                 line-height: 60px;
                                 background-color: #f6f6f6;
                                 color: #c4c4c4;
                                 border-bottom: 1px solid #cccccc;
+                                &:nth-of-type(1){
+                                    width: 10%;
+                                }
+                                &:nth-of-type(2){
+                                    width: 30%;
+                                }
+                                &:nth-of-type(3){
+                                    width: 60%;
+                                }
                             }
                         }
 
                         tbody {
+                            width: 100%;
                             >tr {
                                 height: 40px;
                                 line-height: 40px;
@@ -457,10 +480,17 @@ body {
                                 >td {
                                     &:nth-of-type(1) {
                                         text-align: center;
+                                        width: 10%;
                                     }
 
                                     &:nth-of-type(2) {
                                         text-indent: 90px;
+                                        width: 30%;
+                                    }
+
+                                    &:nth-of-type(3) {
+                                        text-indent: 90px;
+                                        width: 60%;
                                     }
                                 }
                             }
@@ -617,16 +647,27 @@ body {
                         }
 
                         thead {
+                            width: 100%;
                             >tr {
                                 height: 60px;
                                 line-height: 60px;
                                 background-color: #f6f6f6;
                                 color: #c4c4c4;
                                 border-bottom: 1px solid #cccccc;
+                                &:nth-of-type(1){
+                                    width: 10%;
+                                }
+                                &:nth-of-type(2){
+                                    width: 30%;
+                                }
+                                &:nth-of-type(3){
+                                    width: 60%;
+                                }
                             }
                         }
 
                         tbody {
+                            width: 100%;
                             >tr {
                                 height: 40px;
                                 line-height: 40px;
@@ -634,10 +675,17 @@ body {
 
                                 >td {
                                     &:nth-of-type(1) {
+                                        width: 10%;
                                         text-align: center;
                                     }
 
                                     &:nth-of-type(2) {
+                                        width: 30%;
+                                        text-indent: 90px;
+                                    }
+
+                                    &:nth-of-type(3) {
+                                        width: 60%;
                                         text-indent: 90px;
                                     }
                                 }
@@ -795,16 +843,27 @@ body {
                         }
 
                         thead {
+                            width: 100%;
                             >tr {
                                 height: 60px;
                                 line-height: 60px;
                                 background-color: #f6f6f6;
                                 color: #c4c4c4;
                                 border-bottom: 1px solid #cccccc;
+                                &:nth-of-type(1){
+                                    width: 10%;
+                                }
+                                &:nth-of-type(2){
+                                    width: 30%;
+                                }
+                                &:nth-of-type(3){
+                                    width: 60%;
+                                }
                             }
                         }
 
                         tbody {
+                            width: 100%;
                             >tr {
                                 height: 40px;
                                 line-height: 40px;
@@ -813,10 +872,16 @@ body {
                                 >td {
                                     &:nth-of-type(1) {
                                         text-align: center;
+                                        width: 10%;
                                     }
 
                                     &:nth-of-type(2) {
                                         text-indent: 90px;
+                                        width: 30%;
+                                    }
+
+                                    &:nth-of-type(3) {
+                                        width: 60%;
                                     }
                                 }
                             }
@@ -861,22 +926,26 @@ body {
                 width: 100%;
                 height: 1170px;
                 clear: both;
-                .card{
+
+                .card {
                     float: left;
                     position: relative;
                     width: 540px;
                     height: 360px;
-                    background: $mainColor-1;
+                    background: #f2f2f2;
                     margin: 0 10px 30px 50px;
                     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-                    &:hover .cardImg, &:focus .cardImg{
+
+                    &:hover .cardImg,
+                    &:focus .cardImg {
                         width: 210px;
                         height: 140px;
                         left: -50px;
                         top: 30px;
                         transition: 0.5s ease-in-out;
                     }
-                    .cardImg{
+
+                    .cardImg {
                         position: absolute;
                         top: 0;
                         left: 0;
@@ -887,37 +956,46 @@ body {
                         transition: 0.5s ease-in-out;
                         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
                     }
-                    .cardTxt{
+
+                    .cardTxt {
                         padding: 30px;
-                        color: #fff;
-                        >div{
-                            h4{
+                        color: $mainColor-1;
+
+                        >div {
+                            h4 {
                                 font-size: 24px;
                                 font-weight: 700;
                                 padding-left: 170px;
                             }
-                            .txt-section1{
+
+                            .txt-section1 {
                                 padding-left: 170px;
                             }
                         }
                     }
-                    &:nth-of-type(2n){
+
+                    &:nth-of-type(2n) {
                         margin: 0 50px 30px 10px;
-                        &:hover .cardImg{
+
+                        &:hover .cardImg {
                             left: unset;
                             right: -50px;
                         }
-                        .cardImg{
+
+                        .cardImg {
                             left: unset;
                             right: 0;
                         }
-                        .cardTxt{
+
+                        .cardTxt {
                             padding: 30px;
-                            >div{
-                                h4{
+
+                            >div {
+                                h4 {
                                     padding-left: 0;
                                 }
-                                .txt-section1{
+
+                                .txt-section1 {
                                     padding-left: 0;
                                 }
                             }
@@ -928,13 +1006,16 @@ body {
         }
     }
 
-    .row7-wrap{
+    .row7-wrap {
         position: relative;
         width: 100%;
-        .row7{
+        height: auto;
+
+        .row7 {
             width: 1200px;
             height: 100%;
             margin: 0 auto;
+
             .row7-title {
                 text-align: center;
                 padding: 90px 0 40px;
@@ -953,10 +1034,12 @@ body {
                     font-weight: 700;
                 }
             }
-            .row7-text{
+
+            .row7-text {
                 width: 100%;
                 margin-bottom: 100px;
-                >.contact-form-wrap{
+
+                >.contact-form-wrap {
                     width: 760px;
                     text-align: center;
                     margin: 0 auto;
@@ -964,19 +1047,24 @@ body {
                     border-radius: 15px;
                     padding: 50px;
                     font-size: 20px;
-                    >form{
+                    box-shadow: 3px 3px 10px #aeaeae, -4px -4px 10px #fff;
+
+                    >form {
                         text-align: left;
-                        div{
+
+                        div {
                             display: block;
                             width: 100%;
                             margin-bottom: 60px;
-                            label{
-                                em{
+
+                            label {
+                                em {
                                     color: $mainColor-2;
                                     font-weight: 700;
                                 }
                             }
-                            input{
+
+                            input {
                                 width: 100%;
                                 height: 40px;
                                 border: none;
@@ -985,7 +1073,8 @@ body {
                                 text-indent: 15px;
                                 font-size: 18px;
                             }
-                            textarea{
+
+                            textarea {
                                 margin-top: 10px;
                                 width: 100%;
                                 height: 160px;
@@ -995,6 +1084,7 @@ body {
                                 padding: 10px;
                             }
                         }
+
                         >.submit {
                             display: block;
                             width: 120px;
@@ -1010,6 +1100,7 @@ body {
                             cursor: pointer;
                             transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
                             -webkit-transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
                             &:hover,
                             &:focus {
                                 background-color: $mainColor-4;
@@ -1024,11 +1115,906 @@ body {
     }
 }
 
-#footer{
+#footer {
     width: 100%;
     height: 80px;
     line-height: 80px;
     text-align: center;
     color: #fff;
     background-color: $mainColor-1;
+}
+
+@media(min-width: 768px) and (max-width: 1199px) {
+    #header{
+        .gnb-wrap{
+            display: none;
+        }
+        .all-menu-wrap{
+            position: relative;
+            display: block;
+            .btn-all-menu-open{
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                width: 32px;
+                height: 32px;
+                text-indent: -9999px;
+                border: none;
+                background: url(../img/main/menuIcon.png) no-repeat 50% 50%;
+                background-size: cover;
+                cursor: pointer;
+            }
+            .all-menu{
+                position: fixed;
+                top: 0;
+                right: -100vw;
+                width: 360px;
+                height: 100vh;
+                background-color: #1a1a1a;
+                color: #fff;
+                transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+                -webkit-transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+                .btn-all-menu-close{
+                    position: absolute;
+                    top: 30px;
+                    right: 30px;
+                    width: 32px;
+                    height: 32px;
+                    text-indent: -9999px;
+                    border: none;
+                    background: url(../img/main/close.png) no-repeat 50% 50%;
+                    background-size: cover;
+                    cursor: pointer;
+                }
+                >ul{
+                    position: relative;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    padding-left: 20px;
+                    >li{
+                        padding-bottom: 15px;
+                        &:nth-of-type(3){
+                            padding-bottom: 0;
+                        }
+                        >a{
+                            position: relative;
+                            display: inline-block;
+                            font-size: 32px;
+                            font-weight: 700;
+                            &:hover, &:focus{
+                                &::after{
+                                    width: 100%;
+                                }
+                            }
+                            &::after{
+                                position: absolute;
+                                content: '';
+                                bottom: 0;
+                                left: 0;
+                                width: 0%;
+                                height: 3px;
+                                clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+                                background-color: $mainColor-4;
+                                transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+                                -webkit-transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+                            }
+                        }
+                        >ul{
+                            height: 0px;
+                            overflow: hidden;
+                            padding: 10px 0 0 10px;
+                            transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+                            -webkit-transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+                            &.active{
+                                height: 265px;
+                            }
+                            >li{
+                                padding-bottom: 10px;
+                                >a{
+                                    font-size: 18px;
+                                    >em{
+                                        color: $mainColor-4;
+                                        font-size: 22px;
+                                    }
+                                    >span{
+                                        padding-left: 25px;
+                                    }
+                                }
+                                &:nth-of-type(4){
+                                    padding-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #container{
+        .row1-wrap{
+            .row1{
+                width: 100%;
+                .title{
+                    top:  30.92783505154639vh; //300px(970)
+                    >h1{
+                        font-size: 50px;
+                        >span{
+                            font-size: 50px;
+                        }
+                    }
+                }
+            }
+        }
+        .row2-wrap{
+            width: 100%;
+            .row2{
+                width: 100%;
+                .row2-text{
+                    height: auto;
+                    >p{
+                        width: 768px;
+                        margin: 0 auto;
+                    }
+                    .row2-text-section1{
+                        float: none;
+                        width: 768px;
+                        margin: 0 auto;
+                    }
+                    .row2-text-section2{
+                        float: none;
+                        width: 768px;
+                        margin: 40px auto 0;
+                    }
+                }
+            }
+        }
+        .row3-wrap{
+            .row3{
+                width: 100%;
+                .row3-text{
+                    .row3-text-section1{
+                        height: auto;
+                        .row3-text-section1-1{
+                            float: none;
+                            width: 100%;
+                            max-width: 800px;
+                            height: auto;
+                            margin: 0 auto;
+                            padding: 30px;
+                        }
+                        .row3-text-section1-2{
+                            float: none;
+                            width: 100%;
+                            max-width: 800px;
+                            height: auto;
+                            margin: 0 auto;
+                            padding: 30px;
+                            h4{
+                                font-size: 34px;
+                                span{
+                                    width: 15%;
+                                }
+                            }
+                        }
+                    }
+                    .row3-text-section2{
+                        padding: 10px;
+                        .row3-table{
+                            width: 100%;
+                            max-width: 800px;
+                            margin: 0 auto;
+                            thead{
+                                >tr{
+                                    &:nth-of-type(1){
+                                        width: 10%;
+                                    }
+                                    &:nth-of-type(2){
+                                        width: 30%;
+                                    }
+                                    &:nth-of-type(3){
+                                        width: 60%;
+                                    }
+                                }
+                            }
+                            tbody{
+                                >tr{
+                                    >td {
+                                        &:nth-of-type(1) {
+                                            text-align: center;
+                                            width: 10%;
+                                        }
+    
+                                        &:nth-of-type(2) {
+                                            text-align: center;
+                                            text-indent: 0;
+                                            width: 30%;
+                                        }
+    
+                                        &:nth-of-type(3) {
+                                            text-indent: 0;
+                                            width: 60%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .row4-wrap{
+            .row4{
+                width: 100%;
+                .row4-text{
+                    .row4-text-section1{
+                        height: auto;
+                        .row4-text-section1-1{
+                            float: none;
+                            width: 100%;
+                            max-width: 800px;
+                            height: auto;
+                            margin: 0 auto;
+                            padding: 30px;
+                        }
+                        .row4-text-section1-2{
+                            float: none;
+                            width: 100%;
+                            max-width: 800px;
+                            height: auto;
+                            margin: 0 auto;
+                            padding: 30px;
+                            h4{
+                                font-size: 34px;
+                                span{
+                                    width: 15%;
+                                }
+                            }
+                        }
+                    }
+                    .row4-text-section2{
+                        padding: 10px;
+                        .row4-table{
+                            width: 100%;
+                            max-width: 800px;
+                            margin: 0 auto;
+                            thead{
+                                >tr{
+                                    &:nth-of-type(1){
+                                        width: 10%;
+                                    }
+                                    &:nth-of-type(2){
+                                        width: 30%;
+                                    }
+                                    &:nth-of-type(3){
+                                        width: 60%;
+                                    }
+                                }
+                            }
+                            tbody{
+                                >tr{
+                                    >td {
+                                        &:nth-of-type(1) {
+                                            text-align: center;
+                                            width: 10%;
+                                        }
+    
+                                        &:nth-of-type(2) {
+                                            text-align: center;
+                                            text-indent: 0;
+                                            width: 30%;
+                                        }
+    
+                                        &:nth-of-type(3) {
+                                            text-indent: 0;
+                                            width: 60%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .row5-wrap{
+            .row5{
+                width: 100%;
+                .row5-text{
+                    .row5-text-section1{
+                        height: auto;
+                        .row5-text-section1-1{
+                            float: none;
+                            width: 100%;
+                            max-width: 800px;
+                            height: auto;
+                            margin: 0 auto;
+                            padding: 30px;
+                        }
+                        .row5-text-section1-2{
+                            float: none;
+                            width: 100%;
+                            max-width: 800px;
+                            height: auto;
+                            margin: 0 auto;
+                            padding: 30px;
+                            h4{
+                                font-size: 34px;
+                                span{
+                                    width: 15%;
+                                }
+                            }
+                        }
+                    }
+                    .row5-text-section2{
+                        padding: 10px;
+                        .row5-table{
+                            width: 100%;
+                            max-width: 800px;
+                            margin: 0 auto;
+                            thead{
+                                >tr{
+                                    &:nth-of-type(1){
+                                        width: 10%;
+                                    }
+                                    &:nth-of-type(2){
+                                        width: 30%;
+                                    }
+                                    &:nth-of-type(3){
+                                        width: 60%;
+                                    }
+                                }
+                            }
+                            tbody{
+                                >tr{
+                                    >td {
+                                        &:nth-of-type(1) {
+                                            text-align: center;
+                                            width: 10%;
+                                        }
+    
+                                        &:nth-of-type(2) {
+                                            text-align: center;
+                                            text-indent: 0;
+                                            width: 30%;
+                                        }
+    
+                                        &:nth-of-type(3) {
+                                            text-indent: 0;
+                                            width: 60%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .row6-wrap{
+            .row6{
+                width: 100%;
+                .row6-text{
+                    height: auto;
+                    .card{
+                        float: none;
+                        margin: 0 auto 30px 50px;
+                        pointer-events: none;
+                        max-width: 540px;
+                        width: 42.05729166666667vw; //323px(768)
+                        .cardImg{
+                            width: 375px;
+                            height: 250px;
+                            top: 30px;
+                            left: unset;
+                            right: -345px;
+                        }
+                        .cardTxt{
+                            >div{
+                                h4{
+                                    padding-left: 0;
+                                }
+                            }
+                        }
+                        &:nth-of-type(2n){
+                            margin: 0 50px 30px auto;
+                            .cardImg{
+                                left: -345px;
+                            }
+                            .cardTxt{
+                                >div{
+                                    h4{
+                                        text-align: right;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .row7-wrap{
+            .row7{
+                width: 100%;
+                .row7-text{
+                    padding: 30px;
+                    >.contact-form-wrap{
+                        width: 100%;
+                        max-width: 760px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    #header{
+        .gnb-wrap{
+            display: none;
+        }
+        .all-menu-wrap{
+            position: relative;
+            display: block;
+            .btn-all-menu-open{
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                width: 32px;
+                height: 32px;
+                text-indent: -9999px;
+                border: none;
+                background: url(../img/main/menuIcon.png) no-repeat 50% 50%;
+                background-size: cover;
+                cursor: pointer;
+            }
+            .all-menu{
+                position: fixed;
+                top: 0;
+                right: -100vw;
+                width: 360px;
+                height: 100vh;
+                background-color: #1a1a1a;
+                color: #fff;
+                transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+                -webkit-transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+                .btn-all-menu-close{
+                    position: absolute;
+                    top: 30px;
+                    right: 30px;
+                    width: 32px;
+                    height: 32px;
+                    text-indent: -9999px;
+                    border: none;
+                    background: url(../img/main/close.png) no-repeat 50% 50%;
+                    background-size: cover;
+                    cursor: pointer;
+                }
+                >ul{
+                    position: relative;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    padding-left: 20px;
+                    >li{
+                        padding-bottom: 15px;
+                        &:nth-of-type(3){
+                            padding-bottom: 0;
+                        }
+                        >a{
+                            position: relative;
+                            display: inline-block;
+                            font-size: 32px;
+                            font-weight: 700;
+                            &:hover, &:focus{
+                                &::after{
+                                    width: 100%;
+                                }
+                            }
+                            &::after{
+                                position: absolute;
+                                content: '';
+                                bottom: 0;
+                                left: 0;
+                                width: 0%;
+                                height: 3px;
+                                clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+                                background-color: $mainColor-4;
+                                transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+                                -webkit-transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+                            }
+                        }
+                        >ul{
+                            height: 0px;
+                            overflow: hidden;
+                            padding: 10px 0 0 10px;
+                            transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+                            -webkit-transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+                            &.active{
+                                height: 265px;
+                            }
+                            >li{
+                                padding-bottom: 10px;
+                                >a{
+                                    font-size: 18px;
+                                    >em{
+                                        color: $mainColor-4;
+                                        font-size: 22px;
+                                    }
+                                    >span{
+                                        padding-left: 25px;
+                                    }
+                                }
+                                &:nth-of-type(4){
+                                    padding-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #container{
+        .row1-wrap{
+            .row1{
+                width: 100%;
+                .title{
+                    margin: 0 auto;
+                    top:  50%;
+                    transform: translateY(-50%);
+                    >h1{
+                        padding-left: 0;
+                        font-size: 45px;
+                        text-align: center;
+                        >span{
+                            font-size: 45px;
+                        }
+                    }
+                    >p{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .row2-wrap{
+            width: 100%;
+            background-color: $mainColor-1;
+            color: #fff;
+            .row2{
+                width: 100%;
+                .row2-title{
+                    h2{
+                        font-size: 45px;
+                    }
+                    h3{
+                        font-size: 26px;
+                    }
+                }
+                .row2-text{
+                    height: auto;
+                    >p{
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                    .row2-text-section1{
+                        float: none;
+                        width: 100%;
+                        height: auto;
+                        margin: 0 auto;
+                        padding: 0 10px 0 40px;
+                        
+                        br{
+                            display: none;
+                        }
+                    }
+                    .row2-text-section2{
+                        float: none;
+                        width: 100%;
+                        height: auto;
+                        margin: 40px auto 0;
+                        padding: 40px 10px 0 10px;
+                        background-color: #000;
+                        color: #fff;
+                        ul{
+                            li{
+                                height: 120px;
+                                text-align: center;
+                                >img{
+                                    width: 70px;
+                                    height: 70px;
+                                    display: block;
+                                    padding-right: 0;
+                                    margin: 0 auto;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .row3-wrap{
+            .row3{
+                width: 100%;
+                .row3-text{
+                    .row3-text-section1{
+                        height: auto;
+                        .row3-text-section1-1{
+                            float: none;
+                            width: 100%;
+                            height: auto;
+                            margin: 0 auto;
+                            padding: 30px;
+                        }
+                        .row3-text-section1-2{
+                            float: none;
+                            width: 100%;
+                            max-width: 800px;
+                            height: auto;
+                            margin: 0 auto;
+                            padding: 30px;
+                            h4{
+                                font-size: 34px;
+                                span{
+                                    width: 15%;
+                                }
+                            }
+                        }
+                    }
+                    .row3-text-section2{
+                        padding: 10px;
+                        .row3-table{
+                            width: 100%;
+                            max-width: 800px;
+                            margin: 0 auto;
+                            thead{
+                                >tr{
+                                    &:nth-of-type(1){
+                                        width: 10%;
+                                    }
+                                    &:nth-of-type(2){
+                                        width: 30%;
+                                    }
+                                    &:nth-of-type(3){
+                                        width: 60%;
+                                    }
+                                }
+                            }
+                            tbody{
+                                >tr{
+                                    >td {
+                                        &:nth-of-type(1) {
+                                            text-align: center;
+                                            width: 10%;
+                                        }
+    
+                                        &:nth-of-type(2) {
+                                            text-align: center;
+                                            text-indent: 0;
+                                            width: 30%;
+                                        }
+    
+                                        &:nth-of-type(3) {
+                                            text-indent: 0;
+                                            width: 60%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .row4-wrap{
+            display: none;
+            .row4{
+                width: 100%;
+                .row4-text{
+                    .row4-text-section1{
+                        height: auto;
+                        .row4-text-section1-1{
+                            float: none;
+                            width: 100%;
+                            max-width: 800px;
+                            height: auto;
+                            margin: 0 auto;
+                            padding: 30px;
+                        }
+                        .row4-text-section1-2{
+                            float: none;
+                            width: 100%;
+                            max-width: 800px;
+                            height: auto;
+                            margin: 0 auto;
+                            padding: 30px;
+                            h4{
+                                font-size: 34px;
+                                span{
+                                    width: 15%;
+                                }
+                            }
+                        }
+                    }
+                    .row4-text-section2{
+                        padding: 10px;
+                        .row4-table{
+                            width: 100%;
+                            max-width: 800px;
+                            margin: 0 auto;
+                            thead{
+                                >tr{
+                                    &:nth-of-type(1){
+                                        width: 10%;
+                                    }
+                                    &:nth-of-type(2){
+                                        width: 30%;
+                                    }
+                                    &:nth-of-type(3){
+                                        width: 60%;
+                                    }
+                                }
+                            }
+                            tbody{
+                                >tr{
+                                    >td {
+                                        &:nth-of-type(1) {
+                                            text-align: center;
+                                            width: 10%;
+                                        }
+    
+                                        &:nth-of-type(2) {
+                                            text-align: center;
+                                            text-indent: 0;
+                                            width: 30%;
+                                        }
+    
+                                        &:nth-of-type(3) {
+                                            text-indent: 0;
+                                            width: 60%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .row5-wrap{
+            display: none;
+            .row5{
+                width: 100%;
+                .row5-text{
+                    .row5-text-section1{
+                        height: auto;
+                        .row5-text-section1-1{
+                            float: none;
+                            width: 100%;
+                            max-width: 800px;
+                            height: auto;
+                            margin: 0 auto;
+                            padding: 30px;
+                        }
+                        .row5-text-section1-2{
+                            float: none;
+                            width: 100%;
+                            max-width: 800px;
+                            height: auto;
+                            margin: 0 auto;
+                            padding: 30px;
+                            h4{
+                                font-size: 34px;
+                                span{
+                                    width: 15%;
+                                }
+                            }
+                        }
+                    }
+                    .row5-text-section2{
+                        padding: 10px;
+                        .row5-table{
+                            width: 100%;
+                            max-width: 800px;
+                            margin: 0 auto;
+                            thead{
+                                >tr{
+                                    &:nth-of-type(1){
+                                        width: 10%;
+                                    }
+                                    &:nth-of-type(2){
+                                        width: 30%;
+                                    }
+                                    &:nth-of-type(3){
+                                        width: 60%;
+                                    }
+                                }
+                            }
+                            tbody{
+                                >tr{
+                                    >td {
+                                        &:nth-of-type(1) {
+                                            text-align: center;
+                                            width: 10%;
+                                        }
+    
+                                        &:nth-of-type(2) {
+                                            text-align: center;
+                                            text-indent: 0;
+                                            width: 30%;
+                                        }
+    
+                                        &:nth-of-type(3) {
+                                            text-indent: 0;
+                                            width: 60%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .row6-wrap{
+            display: none;
+            .row6{
+                width: 100%;
+                .row6-text{
+                    height: auto;
+                    .card{
+                        float: none;
+                        margin: 0 auto 30px 50px;
+                        pointer-events: none;
+                        max-width: 540px;
+                        width: 42.05729166666667vw; //323px(768)
+                        .cardImg{
+                            width: 375px;
+                            height: 250px;
+                            top: 30px;
+                            left: unset;
+                            right: -345px;
+                        }
+                        .cardTxt{
+                            >div{
+                                h4{
+                                    padding-left: 0;
+                                }
+                            }
+                        }
+                        &:nth-of-type(2n){
+                            margin: 0 50px 30px auto;
+                            .cardImg{
+                                left: -345px;
+                            }
+                            .cardTxt{
+                                >div{
+                                    h4{
+                                        text-align: right;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .row7-wrap{
+            display: none;
+            .row7{
+                width: 100%;
+                .row7-text{
+                    padding: 30px;
+                    >.contact-form-wrap{
+                        width: 100%;
+                        max-width: 760px;
+                    }
+                }
+            }
+        }
+    }
+    #footer{
+        display: none;
+    }
 }

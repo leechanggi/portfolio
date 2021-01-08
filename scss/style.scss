@@ -958,6 +958,8 @@ body {
                     }
 
                     .cardTxt {
+                        width: 100%;
+                        height: 100%;
                         padding: 30px;
                         color: $mainColor-1;
 
@@ -1679,23 +1681,28 @@ body {
         }
         .row2-wrap{
             width: 100%;
-            background-color: $mainColor-1;
-            color: #fff;
+            background-color: #01092b;
+            color: #e2e2e2;
             .row2{
                 width: 100%;
                 .row2-title{
                     h2{
-                        font-size: 45px;
+                        font-size: 36px;
                     }
                     h3{
-                        font-size: 26px;
+                        font-size: 24px;
                     }
                 }
                 .row2-text{
                     height: auto;
                     >p{
+                        font-size: 18px;
                         width: 100%;
                         margin: 0 auto;
+
+                        span{
+                            font-size: 24px;
+                        }
                     }
                     .row2-text-section1{
                         float: none;
@@ -1714,8 +1721,8 @@ body {
                         height: auto;
                         margin: 40px auto 0;
                         padding: 40px 10px 0 10px;
-                        background-color: #000;
-                        color: #fff;
+                        background-color: #1a1a1a;
+                        color: #e2e2e2;
                         ul{
                             li{
                                 height: 120px;
@@ -1737,6 +1744,14 @@ body {
         .row3-wrap{
             .row3{
                 width: 100%;
+                .row3-title{
+                    h2{
+                        font-size: 36px;
+                    }
+                    h3{
+                        font-size: 24px;
+                    }
+                }
                 .row3-text{
                     .row3-text-section1{
                         height: auto;
@@ -1745,7 +1760,7 @@ body {
                             width: 100%;
                             height: auto;
                             margin: 0 auto;
-                            padding: 30px;
+                            padding: 10px;
                         }
                         .row3-text-section1-2{
                             float: none;
@@ -1753,11 +1768,34 @@ body {
                             max-width: 800px;
                             height: auto;
                             margin: 0 auto;
-                            padding: 30px;
+                            padding: 10px;
                             h4{
-                                font-size: 34px;
+                                font-size: 22px;
+                                text-align: center;
+                                margin-bottom: 10px;
                                 span{
-                                    width: 15%;
+                                    display: block;
+                                    width: 100%;
+                                    font-size: 36px;
+                                }
+                            }
+                            >ul{
+                                font-size: 16px;
+                                >li{
+                                    >span{
+                                        width: 45%;
+                                    }
+                                    &:nth-of-type(3){
+                                        font-size: 14px;
+                                        >span{
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                                .row3-text-section1-2-palette{
+                                    >ul{
+                                        width: calc(55% - 4px);
+                                    }
                                 }
                             }
                         }
@@ -1766,38 +1804,78 @@ body {
                         padding: 10px;
                         .row3-table{
                             width: 100%;
-                            max-width: 800px;
                             margin: 0 auto;
                             thead{
-                                >tr{
-                                    &:nth-of-type(1){
-                                        width: 10%;
-                                    }
-                                    &:nth-of-type(2){
-                                        width: 30%;
-                                    }
-                                    &:nth-of-type(3){
-                                        width: 60%;
-                                    }
-                                }
+                                display: none;
                             }
                             tbody{
                                 >tr{
+                                    display: block;
+                                    border-bottom: none;
+                                    border-top: 1px solid #cccccc;
+                                    height: auto;
+                                    margin-bottom: 40px;
                                     >td {
+                                        display: block;
+                                        width: 100%;
                                         &:nth-of-type(1) {
-                                            text-align: center;
-                                            width: 10%;
+                                            position: relative;
+                                            text-align: left;
+                                            text-indent: 0;
+                                            width: 100%;
+                                            padding-left: 32%;
+                                            border-bottom: 1px solid #cccccc;
+                                            &::after{
+                                                position: absolute;
+                                                content: 'Category';
+                                                left: 0;
+                                                top: 0;
+                                                width: 30%;
+                                                height: 100%;
+                                                color: $mainColor-1;
+                                                background: #f2f2f2;
+                                                padding-left: 10px;
+                                            }
                                         }
     
                                         &:nth-of-type(2) {
-                                            text-align: center;
+                                            position: relative;
+                                            text-align: left;
                                             text-indent: 0;
-                                            width: 30%;
+                                            width: 100%;
+                                            padding-left: 32%;
+                                            border-bottom: 1px solid #cccccc;
+                                            &::after{
+                                                position: absolute;
+                                                content: 'Source';
+                                                left: 0;
+                                                top: 0;
+                                                width: 30%;
+                                                height: 100%;
+                                                color: $mainColor-1;
+                                                background: #f2f2f2;
+                                                padding-left: 10px;
+                                            }
                                         }
     
                                         &:nth-of-type(3) {
+                                            position: relative;
+                                            text-align: left;
                                             text-indent: 0;
-                                            width: 60%;
+                                            width: 100%;
+                                            padding-left: 32%;
+                                            border-bottom: 1px solid #cccccc;
+                                            &::after{
+                                                position: absolute;
+                                                content: 'keywords';
+                                                left: 0;
+                                                top: 0;
+                                                width: 30%;
+                                                height: 100%;
+                                                color: $mainColor-1;
+                                                background: #f2f2f2;
+                                                padding-left: 10px;
+                                            }
                                         }
                                     }
                                 }
@@ -1808,19 +1886,25 @@ body {
             }
         }
         .row4-wrap{
-            display: none;
             .row4{
                 width: 100%;
+                .row4-title{
+                    h2{
+                        font-size: 36px;
+                    }
+                    h3{
+                        font-size: 24px;
+                    }
+                }
                 .row4-text{
                     .row4-text-section1{
                         height: auto;
                         .row4-text-section1-1{
                             float: none;
                             width: 100%;
-                            max-width: 800px;
                             height: auto;
                             margin: 0 auto;
-                            padding: 30px;
+                            padding: 10px;
                         }
                         .row4-text-section1-2{
                             float: none;
@@ -1828,11 +1912,34 @@ body {
                             max-width: 800px;
                             height: auto;
                             margin: 0 auto;
-                            padding: 30px;
+                            padding: 10px;
                             h4{
-                                font-size: 34px;
+                                font-size: 22px;
+                                text-align: center;
+                                margin-bottom: 10px;
                                 span{
-                                    width: 15%;
+                                    display: block;
+                                    width: 100%;
+                                    font-size: 36px;
+                                }
+                            }
+                            >ul{
+                                font-size: 16px;
+                                >li{
+                                    >span{
+                                        width: 45%;
+                                    }
+                                    &:nth-of-type(3){
+                                        font-size: 14px;
+                                        >span{
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                                .row4-text-section1-2-palette{
+                                    >ul{
+                                        width: calc(55% - 4px);
+                                    }
                                 }
                             }
                         }
@@ -1841,38 +1948,78 @@ body {
                         padding: 10px;
                         .row4-table{
                             width: 100%;
-                            max-width: 800px;
                             margin: 0 auto;
                             thead{
-                                >tr{
-                                    &:nth-of-type(1){
-                                        width: 10%;
-                                    }
-                                    &:nth-of-type(2){
-                                        width: 30%;
-                                    }
-                                    &:nth-of-type(3){
-                                        width: 60%;
-                                    }
-                                }
+                                display: none;
                             }
                             tbody{
                                 >tr{
+                                    display: block;
+                                    border-bottom: none;
+                                    border-top: 1px solid #cccccc;
+                                    height: auto;
+                                    margin-bottom: 40px;
                                     >td {
+                                        display: block;
+                                        width: 100%;
                                         &:nth-of-type(1) {
-                                            text-align: center;
-                                            width: 10%;
+                                            position: relative;
+                                            text-align: left;
+                                            text-indent: 0;
+                                            width: 100%;
+                                            padding-left: 32%;
+                                            border-bottom: 1px solid #cccccc;
+                                            &::after{
+                                                position: absolute;
+                                                content: 'Category';
+                                                left: 0;
+                                                top: 0;
+                                                width: 30%;
+                                                height: 100%;
+                                                color: $mainColor-1;
+                                                background: #f2f2f2;
+                                                padding-left: 10px;
+                                            }
                                         }
     
                                         &:nth-of-type(2) {
-                                            text-align: center;
+                                            position: relative;
+                                            text-align: left;
                                             text-indent: 0;
-                                            width: 30%;
+                                            width: 100%;
+                                            padding-left: 32%;
+                                            border-bottom: 1px solid #cccccc;
+                                            &::after{
+                                                position: absolute;
+                                                content: 'Source';
+                                                left: 0;
+                                                top: 0;
+                                                width: 30%;
+                                                height: 100%;
+                                                color: $mainColor-1;
+                                                background: #f2f2f2;
+                                                padding-left: 10px;
+                                            }
                                         }
     
                                         &:nth-of-type(3) {
+                                            position: relative;
+                                            text-align: left;
                                             text-indent: 0;
-                                            width: 60%;
+                                            width: 100%;
+                                            padding-left: 32%;
+                                            border-bottom: 1px solid #cccccc;
+                                            &::after{
+                                                position: absolute;
+                                                content: 'keywords';
+                                                left: 0;
+                                                top: 0;
+                                                width: 30%;
+                                                height: 100%;
+                                                color: $mainColor-1;
+                                                background: #f2f2f2;
+                                                padding-left: 10px;
+                                            }
                                         }
                                     }
                                 }
@@ -1883,19 +2030,25 @@ body {
             }
         }
         .row5-wrap{
-            display: none;
             .row5{
                 width: 100%;
+                .row5-title{
+                    h2{
+                        font-size: 36px;
+                    }
+                    h3{
+                        font-size: 24px;
+                    }
+                }
                 .row5-text{
                     .row5-text-section1{
                         height: auto;
                         .row5-text-section1-1{
                             float: none;
                             width: 100%;
-                            max-width: 800px;
                             height: auto;
                             margin: 0 auto;
-                            padding: 30px;
+                            padding: 10px;
                         }
                         .row5-text-section1-2{
                             float: none;
@@ -1903,11 +2056,34 @@ body {
                             max-width: 800px;
                             height: auto;
                             margin: 0 auto;
-                            padding: 30px;
+                            padding: 10px;
                             h4{
-                                font-size: 34px;
+                                font-size: 22px;
+                                text-align: center;
+                                margin-bottom: 10px;
                                 span{
-                                    width: 15%;
+                                    display: block;
+                                    width: 100%;
+                                    font-size: 36px;
+                                }
+                            }
+                            >ul{
+                                font-size: 16px;
+                                >li{
+                                    >span{
+                                        width: 45%;
+                                    }
+                                    &:nth-of-type(3){
+                                        font-size: 14px;
+                                        >span{
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                                .row5-text-section1-2-palette{
+                                    >ul{
+                                        width: calc(55% - 4px);
+                                    }
                                 }
                             }
                         }
@@ -1916,38 +2092,78 @@ body {
                         padding: 10px;
                         .row5-table{
                             width: 100%;
-                            max-width: 800px;
                             margin: 0 auto;
                             thead{
-                                >tr{
-                                    &:nth-of-type(1){
-                                        width: 10%;
-                                    }
-                                    &:nth-of-type(2){
-                                        width: 30%;
-                                    }
-                                    &:nth-of-type(3){
-                                        width: 60%;
-                                    }
-                                }
+                                display: none;
                             }
                             tbody{
                                 >tr{
+                                    display: block;
+                                    border-bottom: none;
+                                    border-top: 1px solid #cccccc;
+                                    height: auto;
+                                    margin-bottom: 40px;
                                     >td {
+                                        display: block;
+                                        width: 100%;
                                         &:nth-of-type(1) {
-                                            text-align: center;
-                                            width: 10%;
+                                            position: relative;
+                                            text-align: left;
+                                            text-indent: 0;
+                                            width: 100%;
+                                            padding-left: 32%;
+                                            border-bottom: 1px solid #cccccc;
+                                            &::after{
+                                                position: absolute;
+                                                content: 'Category';
+                                                left: 0;
+                                                top: 0;
+                                                width: 30%;
+                                                height: 100%;
+                                                color: $mainColor-1;
+                                                background: #f2f2f2;
+                                                padding-left: 10px;
+                                            }
                                         }
     
                                         &:nth-of-type(2) {
-                                            text-align: center;
+                                            position: relative;
+                                            text-align: left;
                                             text-indent: 0;
-                                            width: 30%;
+                                            width: 100%;
+                                            padding-left: 32%;
+                                            border-bottom: 1px solid #cccccc;
+                                            &::after{
+                                                position: absolute;
+                                                content: 'Source';
+                                                left: 0;
+                                                top: 0;
+                                                width: 30%;
+                                                height: 100%;
+                                                color: $mainColor-1;
+                                                background: #f2f2f2;
+                                                padding-left: 10px;
+                                            }
                                         }
     
                                         &:nth-of-type(3) {
+                                            position: relative;
+                                            text-align: left;
                                             text-indent: 0;
-                                            width: 60%;
+                                            width: 100%;
+                                            padding-left: 32%;
+                                            border-bottom: 1px solid #cccccc;
+                                            &::after{
+                                                position: absolute;
+                                                content: 'keywords';
+                                                left: 0;
+                                                top: 0;
+                                                width: 30%;
+                                                height: 100%;
+                                                color: $mainColor-1;
+                                                background: #f2f2f2;
+                                                padding-left: 10px;
+                                            }
                                         }
                                     }
                                 }
@@ -1958,40 +2174,57 @@ body {
             }
         }
         .row6-wrap{
-            display: none;
             .row6{
                 width: 100%;
+                .row6-title{
+                    h2{
+                        font-size: 36px;
+                    }
+                }
                 .row6-text{
-                    height: auto;
+                    height: 440px;
+                    overflow-x: auto;
+                    white-space: nowrap;
+                    -webkit-overflow-scrolling: touch;
+                    -ms-scroll-snap-type: x mandatory;
+                    scroll-snap-type: x mandatory;
+                    -webkit-scroll-padding-right: 8px;
+                    scroll-padding-right: 8px;
                     .card{
                         float: none;
-                        margin: 0 auto 30px 50px;
+                        display: inline-block;
                         pointer-events: none;
-                        max-width: 540px;
-                        width: 42.05729166666667vw; //323px(768)
+                        width: 340px;
+                        height: 400px;
+                        margin: 30px 10px 10px;
                         .cardImg{
-                            width: 375px;
-                            height: 250px;
-                            top: 30px;
-                            left: unset;
-                            right: -345px;
+                            width: calc(100% - 60px);
+                            height: 187.33px;
+                            top: -30px;
+                            left: 50%;
+                            right: unset;
+                            transform: translateX(-50%);
+                            border: 1px solid #f2f2f2;
                         }
                         .cardTxt{
                             >div{
                                 h4{
+                                    font-size: 18px;
                                     padding-left: 0;
+                                    padding-top: 140px; //150px(360)
                                 }
                             }
                         }
                         &:nth-of-type(2n){
-                            margin: 0 50px 30px auto;
+                            margin: 30px 10px 10px;
                             .cardImg{
-                                left: -345px;
+                                left: 50%;
+                                transform: translateX(-50%);
                             }
                             .cardTxt{
                                 >div{
                                     h4{
-                                        text-align: right;
+                                        text-align: left;
                                     }
                                 }
                             }
@@ -2001,20 +2234,22 @@ body {
             }
         }
         .row7-wrap{
-            display: none;
             .row7{
                 width: 100%;
+                .row7-title{
+                    h2{
+                        font-size: 36px;
+                    }
+                }
                 .row7-text{
-                    padding: 30px;
+                    padding: 10px;
                     >.contact-form-wrap{
                         width: 100%;
                         max-width: 760px;
+                        padding: 30px;
                     }
                 }
             }
         }
-    }
-    #footer{
-        display: none;
     }
 }

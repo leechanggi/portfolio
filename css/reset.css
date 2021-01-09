@@ -45,6 +45,30 @@
   font-size: 14px;
 }
 
+@-webkit-keyframes cursor {
+  0% {
+    border-right: 1px solid #fff;
+  }
+  50% {
+    border-right: 1px solid #000;
+  }
+  100% {
+    border-right: 1px solid #fff;
+  }
+}
+
+@keyframes cursor {
+  0% {
+    border-right: 1px solid #fff;
+  }
+  50% {
+    border-right: 1px solid #000;
+  }
+  100% {
+    border-right: 1px solid #fff;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

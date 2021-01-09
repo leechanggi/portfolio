@@ -327,18 +327,35 @@ body {
 }
 
 #container .row1-wrap .row1 .title > h1 {
+  position: relative;
   padding-left: 40px;
   font-size: 70px;
   font-weight: bold;
   color: #fff;
+  height: 229px;
 }
 
-#container .row1-wrap .row1 .title > h1.cursor {
+#container .row1-wrap .row1 .title > h1 > span {
+  display: inline-block;
+}
+
+#container .row1-wrap .row1 .title > h1 > span:nth-of-type(1) {
+  width: auto;
+}
+
+#container .row1-wrap .row1 .title > h1 > span:nth-of-type(2) {
+  position: absolute;
+  top: 112px;
+  left: 40px;
+  width: auto;
+}
+
+#container .row1-wrap .row1 .title > h1 > span.cursor {
   -webkit-animation: cursor 0.4s infinite;
           animation: cursor 0.4s infinite;
 }
 
-#container .row1-wrap .row1 .title > h1 > span {
+#container .row1-wrap .row1 .title > h1 > span > em {
   font: 70px/1.6 'Noto Sans KR', Malgun Gothic, "맑은 고딕", "dotum", "돋움", "AppleGothic", sans-serif;
   color: #FFCE4B;
 }
@@ -350,11 +367,6 @@ body {
   font-size: 22px;
   font-weight: bold;
   color: #fff;
-}
-
-#container .row1-wrap .row1 .title > p.cursor {
-  -webkit-animation: cursor 0.4s infinite;
-          animation: cursor 0.4s infinite;
 }
 
 #container .row1-wrap .row1 .title > p::after {
@@ -1437,8 +1449,15 @@ body {
   }
   #container .row1-wrap .row1 .title > h1 {
     font-size: 50px;
+    height: 164px;
   }
   #container .row1-wrap .row1 .title > h1 > span {
+    font-size: 50px;
+  }
+  #container .row1-wrap .row1 .title > h1 > span:nth-of-type(2) {
+    top: 80px;
+  }
+  #container .row1-wrap .row1 .title > h1 > span > em {
     font-size: 50px;
   }
   #container .row2-wrap {
@@ -1800,8 +1819,19 @@ body {
     padding-left: 0;
     font-size: 45px;
     text-align: center;
+    height: 147px;
   }
   #container .row1-wrap .row1 .title > h1 > span {
+    font-size: 45px;
+  }
+  #container .row1-wrap .row1 .title > h1 > span:nth-of-type(2) {
+    width: 100vw;
+    top: 72px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #container .row1-wrap .row1 .title > h1 > span em {
     font-size: 45px;
   }
   #container .row1-wrap .row1 .title > p {

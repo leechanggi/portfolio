@@ -123,16 +123,30 @@ body {
                 top: 25.25773195876289vh; //245px(970)
 
                 >h1 {
+                    position: relative;
                     padding-left: 40px;
                     font-size: 70px;
                     font-weight: bold;
                     color: #fff;
-                    &.cursor{
-                        animation: cursor 0.4s infinite;
-                    }
-                    >span {
-                        font: 70px/1.6 'Noto Sans KR', Malgun Gothic, "맑은 고딕", "dotum", "돋움", "AppleGothic", sans-serif;
-                        color: $mainColor-4;
+                    height: 229px;
+                    >span{
+                        display: inline-block;
+                        &:nth-of-type(1){
+                            width: auto;
+                        }
+                        &:nth-of-type(2){
+                            position: absolute;
+                            top: 112px;
+                            left: 40px;
+                            width: auto;
+                        }
+                        &.cursor{
+                            animation: cursor 0.4s infinite;
+                        }
+                        >em {
+                            font: 70px/1.6 'Noto Sans KR', Malgun Gothic, "맑은 고딕", "dotum", "돋움", "AppleGothic", sans-serif;
+                            color: $mainColor-4;
+                        }
                     }
                 }
 
@@ -143,9 +157,6 @@ body {
                     font-size: 22px;
                     font-weight: bold;
                     color: #fff;
-                    &.cursor{
-                        animation: cursor 0.4s infinite;
-                    }
 
                     &::after {
                         position: absolute;
@@ -1246,8 +1257,15 @@ body {
                     top:  30.92783505154639vh; //300px(970)
                     >h1{
                         font-size: 50px;
+                        height: 164px;
                         >span{
+                            &:nth-of-type(2){
+                                top: 80px;
+                            }
                             font-size: 50px;
+                            >em{
+                                font-size: 50px;
+                            }
                         }
                     }
                 }
@@ -1674,8 +1692,18 @@ body {
                         padding-left: 0;
                         font-size: 45px;
                         text-align: center;
+                        height: 147px;
                         >span{
                             font-size: 45px;
+                            &:nth-of-type(2){
+                                width: 100vw;
+                                top: 72px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                            }
+                            em{
+                                font-size: 45px;
+                            }
                         }
                     }
                     >p{

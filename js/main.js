@@ -96,8 +96,8 @@ function stringEffectFnc() {
     
     
     //타이핑할 문장
-    var result1 = "안녕하세요," + '<br>' + '<span>{</span>' + '웹 퍼블리셔' + '<span>}</span>' + '이창기 입니다.';
-    var result2 = "Web Publisher / UI & Markup Developer";
+    var result1 = "안녕하세요,";
+    var result2 = '<em>' + '{' + '</em>' + '웹 퍼블리셔' + '<em>' + '} ' + '</em>' + '이창기 입니다.';
     var typeing1 = [],
         typeing2 = [];;
     result1 = result1.split(''); // 한글자씩자름
@@ -124,7 +124,7 @@ function stringEffectFnc() {
     var imax2 = typeing2.length;
     
     //setInterval을 이용해 반복적으로 출력 
-    var inter = setInterval(typi, 150);
+    var inter = setInterval(typi, 75);
     var inter2;
     
     
@@ -151,7 +151,7 @@ function stringEffectFnc() {
                 setTimeout(function () {
                     resultDiv2.classList.add("cursor");
                     setTimeout(function () {
-                        inter2 = setInterval(typi2, 150);
+                        inter2 = setInterval(typi2, 75);
                     }, 400);
                 }, 300);
             }, 400);

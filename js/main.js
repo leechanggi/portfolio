@@ -28,13 +28,30 @@ function scrollGnbFnc() {
     });
 }
 
+function scrollGnbEffectFnc() {
+    var gnbBtn = $('.gnb a')
+    var allmenuBtn = $('.all-menu a')
+    gnbBtn.click(function () {
+        $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+        }, 300);
+        return false;
+    });
+    allmenuBtn.click(function () {
+        $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+        }, 300);
+        return false;
+    });
+}
+
 function allmenuFnc() {
-    var allmenuListBtn = $('.all-menu > ul > li > a')
+    var allmenuListBtn = $('.listBtn')
     allmenuListBtn.click(function () {
-        if (allmenuListBtn.next().hasClass('active')) {
-            $(this).next().removeClass('active')
+        if (allmenuListBtn.children('ul').hasClass('active')) {
+            $(this).children('ul').removeClass('active');
         } else {
-            $(this).next().addClass('active');
+            $(this).children('ul').addClass('active');
         }
     })
     $('.btn-all-menu-open').click(function () {
@@ -179,6 +196,7 @@ function stringEffectFnc() {
 
 $(function () {
     scrollGnbFnc();
+    scrollGnbEffectFnc();
     allmenuFnc();
     stringEffectFnc();
 });

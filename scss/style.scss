@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font: 16px/1.6 'Red Hat Display', 'Noto Sans KR', Malgun Gothic, "맑은 고딕", "dotum", "돋움", "AppleGothic", sans-serif;
     font-weight: normal;
@@ -103,7 +107,8 @@ body {
             }
         }
     }
-    .all-menu-wrap{
+
+    .all-menu-wrap {
         display: none;
     }
 }
@@ -129,20 +134,25 @@ body {
                     font-weight: bold;
                     color: #fff;
                     height: 229px;
-                    >span{
+
+                    >span {
                         display: inline-block;
-                        &:nth-of-type(1){
+
+                        &:nth-of-type(1) {
                             width: auto;
                         }
-                        &:nth-of-type(2){
+
+                        &:nth-of-type(2) {
                             position: absolute;
                             top: 112px;
                             left: 40px;
                             width: auto;
                         }
-                        &.cursor{
+
+                        &.cursor {
                             animation: cursor 0.4s infinite;
                         }
+
                         >em {
                             font: 70px/1.6 'Noto Sans KR', Malgun Gothic, "맑은 고딕", "dotum", "돋움", "AppleGothic", sans-serif;
                             color: $mainColor-4;
@@ -468,19 +478,23 @@ body {
 
                         thead {
                             width: 100%;
+
                             >tr {
                                 height: 60px;
                                 line-height: 60px;
                                 background-color: #f6f6f6;
                                 color: #c4c4c4;
                                 border-bottom: 1px solid #cccccc;
-                                &:nth-of-type(1){
+
+                                &:nth-of-type(1) {
                                     width: 10%;
                                 }
-                                &:nth-of-type(2){
+
+                                &:nth-of-type(2) {
                                     width: 30%;
                                 }
-                                &:nth-of-type(3){
+
+                                &:nth-of-type(3) {
                                     width: 60%;
                                 }
                             }
@@ -488,6 +502,7 @@ body {
 
                         tbody {
                             width: 100%;
+
                             >tr {
                                 height: 40px;
                                 line-height: 40px;
@@ -664,19 +679,23 @@ body {
 
                         thead {
                             width: 100%;
+
                             >tr {
                                 height: 60px;
                                 line-height: 60px;
                                 background-color: #f6f6f6;
                                 color: #c4c4c4;
                                 border-bottom: 1px solid #cccccc;
-                                &:nth-of-type(1){
+
+                                &:nth-of-type(1) {
                                     width: 10%;
                                 }
-                                &:nth-of-type(2){
+
+                                &:nth-of-type(2) {
                                     width: 30%;
                                 }
-                                &:nth-of-type(3){
+
+                                &:nth-of-type(3) {
                                     width: 60%;
                                 }
                             }
@@ -684,6 +703,7 @@ body {
 
                         tbody {
                             width: 100%;
+
                             >tr {
                                 height: 40px;
                                 line-height: 40px;
@@ -860,19 +880,23 @@ body {
 
                         thead {
                             width: 100%;
+
                             >tr {
                                 height: 60px;
                                 line-height: 60px;
                                 background-color: #f6f6f6;
                                 color: #c4c4c4;
                                 border-bottom: 1px solid #cccccc;
-                                &:nth-of-type(1){
+
+                                &:nth-of-type(1) {
                                     width: 10%;
                                 }
-                                &:nth-of-type(2){
+
+                                &:nth-of-type(2) {
                                     width: 30%;
                                 }
-                                &:nth-of-type(3){
+
+                                &:nth-of-type(3) {
                                     width: 60%;
                                 }
                             }
@@ -880,6 +904,7 @@ body {
 
                         tbody {
                             width: 100%;
+
                             >tr {
                                 height: 40px;
                                 line-height: 40px;
@@ -984,10 +1009,258 @@ body {
                                 font-size: 24px;
                                 font-weight: 700;
                                 padding-left: 170px;
+                                @include els;
                             }
 
                             .txt-section1 {
-                                padding-left: 170px;
+                                padding: 10px 0 0 30px;
+                                width: 100%;
+                                font-size: 18px;
+                                vertical-align: middle;
+                                @include lineClamp(240px, 6);
+
+                                >li {
+                                    padding-left: 140px;
+                                    display: inline-block;
+                                    width: 100%;
+                                    margin-bottom: 10px;
+
+                                    >span {
+                                        display: inline-block;
+                                        width: 40%;
+                                        padding-left: 10px;
+                                    }
+                                }
+
+                                .row6-text-section1-palette {
+                                    >ul {
+                                        display: inline-block;
+                                        width: calc(60% - 4px);
+
+                                        >li {
+                                            display: inline-block;
+                                            width: 20px;
+                                            height: 20px;
+                                            border-radius: 10px;
+                                            vertical-align: middle;
+
+                                            &:nth-of-type(1) {
+                                                background-color: #1428a0;
+                                            }
+
+                                            &:nth-of-type(2) {
+                                                background-color: #222222;
+                                            }
+
+                                            &:nth-of-type(3) {
+                                                background-color: #555555;
+                                            }
+
+                                            &:nth-of-type(4) {
+                                                background-color: #f4f4f4;
+                                                border: 1px solid #c4c4c4;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .row6-text-section1-txtarea {
+                                    padding-left: 0px;
+
+                                    >a {
+                                        color: $subColor-1;
+
+                                        &:hover {
+                                            text-decoration: underline 1px $subColor-1;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .txt-section2 {
+                                position: relative;
+                                width: 100%;
+                                height: 40px;
+
+                                .row6-text-section2-button {
+                                    position: absolute;
+                                    text-align: center;
+                                    top: 10px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    width: 100%;
+                                    height: 100%;
+
+                                    >a {
+                                        display: inline-block;
+                                        width: 90px;
+                                        height: 30px;
+                                        line-height: 30px;
+                                        border-radius: 20px;
+                                        margin: 0 10px;
+                                        font-size: 16px;
+                                        box-shadow: 3px 3px 10px #aeaeae, -4px -4px 10px #fff;
+                                        background-color: $mainColor-1;
+                                        color: #fff;
+                                        transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+                                        -webkit-transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+                                        &:hover,
+                                        &:focus {
+                                            background-color: $mainColor-4;
+                                            color: $mainColor-1;
+                                            font-weight: 700;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        .cardTxt {
+                            >div {
+                                .txt-section1 {
+                                    .row6-text-section1-palette {
+                                        >ul {
+                                            >li {
+                                                &:nth-of-type(1) {
+                                                    background-color: #ed1b29;
+                                                }
+
+                                                &:nth-of-type(2) {
+                                                    background-color: #464242;
+                                                }
+
+                                                &:nth-of-type(3) {
+                                                    background-color: #2e2a2a;
+                                                }
+
+                                                &:nth-of-type(4) {
+                                                    background-color: #62030c;
+                                                    border: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(3) {
+                        .cardTxt {
+                            >div {
+                                .txt-section1 {
+                                    .row6-text-section1-palette {
+                                        >ul {
+                                            >li {
+                                                &:nth-of-type(1) {
+                                                    background-color: #ec1d25;
+                                                }
+
+                                                &:nth-of-type(2) {
+                                                    background-color: #555555;
+                                                }
+
+                                                &:nth-of-type(3) {
+                                                    background-color: #222222;
+                                                }
+
+                                                &:nth-of-type(4) {
+                                                    background-color: #cccccc;
+                                                    border: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(4) {
+                        .cardTxt {
+                            >div {
+                                .txt-section1 {
+                                    .row6-text-section1-palette {
+                                        >ul {
+                                            >li {
+                                                &:nth-of-type(1) {
+                                                    background-color: #0066c1;
+                                                }
+
+                                                &:nth-of-type(2) {
+                                                    background-color: #e72a00;
+                                                }
+
+                                                &:nth-of-type(3) {
+                                                    background-color: #222222;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(5) {
+                        .cardTxt {
+                            >div {
+                                .txt-section1 {
+                                    .row6-text-section1-palette {
+                                        >ul {
+                                            >li {
+                                                &:nth-of-type(1) {
+                                                    background-color: #009b75;
+                                                }
+
+                                                &:nth-of-type(2) {
+                                                    background-color: #CEDA00;
+                                                }
+
+                                                &:nth-of-type(3) {
+                                                    background-color: #555555;
+                                                }
+
+                                                &:nth-of-type(4) {
+                                                    background-color: #eeeeee;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(6) {
+                        .cardTxt {
+                            >div {
+                                .txt-section1 {
+                                    .row6-text-section1-palette {
+                                        >ul {
+                                            >li {
+                                                &:nth-of-type(1) {
+                                                    background-color: #00407D;
+                                                }
+
+                                                &:nth-of-type(2) {
+                                                    background-color: #3d3d3d;
+                                                }
+
+                                                &:nth-of-type(3) {
+                                                    background-color: #cccccc;
+                                                }
+
+                                                &:nth-of-type(4) {
+                                                    background-color: #f5f5f5;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -1015,7 +1288,12 @@ body {
 
                                 .txt-section1 {
                                     padding-left: 0;
+
+                                    >li {
+                                        padding-left: 0;
+                                    }
                                 }
+
                             }
                         }
                     }
@@ -1143,14 +1421,16 @@ body {
 }
 
 @media(min-width: 768px) and (max-width: 1199px) {
-    #header{
-        .gnb-wrap{
+    #header {
+        .gnb-wrap {
             display: none;
         }
-        .all-menu-wrap{
+
+        .all-menu-wrap {
             position: relative;
             display: block;
-            .btn-all-menu-open{
+
+            .btn-all-menu-open {
                 position: absolute;
                 top: 30px;
                 right: 30px;
@@ -1162,7 +1442,8 @@ body {
                 background-size: cover;
                 cursor: pointer;
             }
-            .all-menu{
+
+            .all-menu {
                 position: fixed;
                 top: 0;
                 right: -100vw;
@@ -1172,7 +1453,9 @@ body {
                 color: #fff;
                 transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
                 -webkit-transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
-                .btn-all-menu-close{
+                z-index: 999;
+
+                .btn-all-menu-close {
                     position: absolute;
                     top: 30px;
                     right: 30px;
@@ -1184,28 +1467,38 @@ body {
                     background-size: cover;
                     cursor: pointer;
                 }
-                >ul{
+
+                >ul {
                     position: relative;
                     left: 0;
                     top: 50%;
                     transform: translateY(-50%);
                     padding-left: 20px;
-                    >li{
+
+                    >li {
                         padding-bottom: 15px;
-                        &:nth-of-type(3){
+                        
+                        &:nth-of-type(3) {
                             padding-bottom: 0;
+                            font-size: 32px;
+                            font-weight: 700;
+                            cursor: pointer;
                         }
-                        >a{
+
+                        >a {
                             position: relative;
                             display: inline-block;
                             font-size: 32px;
                             font-weight: 700;
-                            &:hover, &:focus{
-                                &::after{
+
+                            &:hover,
+                            &:focus {
+                                &::after {
                                     width: 100%;
                                 }
                             }
-                            &::after{
+
+                            &::after {
                                 position: absolute;
                                 content: '';
                                 bottom: 0;
@@ -1218,28 +1511,38 @@ body {
                                 -webkit-transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
                             }
                         }
-                        >ul{
+
+                        >ul {
                             height: 0px;
                             overflow: hidden;
                             padding: 10px 0 0 10px;
                             transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
                             -webkit-transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
-                            &.active{
+
+                            &.active {
                                 height: 265px;
                             }
-                            >li{
+
+                            >li {
                                 padding-bottom: 10px;
-                                >a{
+                                font-size: 18px;
+                                font-weight: 400;
+
+                                >a {
                                     font-size: 18px;
-                                    >em{
+                                    font-weight: 400;
+
+                                    >em {
                                         color: $mainColor-4;
                                         font-size: 22px;
                                     }
-                                    >span{
+
+                                    >span {
                                         padding-left: 25px;
                                     }
                                 }
-                                &:nth-of-type(4){
+
+                                &:nth-of-type(4) {
                                     padding-bottom: 0;
                                 }
                             }
@@ -1249,21 +1552,27 @@ body {
             }
         }
     }
-    #container{
-        .row1-wrap{
-            .row1{
+
+    #container {
+        .row1-wrap {
+            .row1 {
                 width: 100%;
-                .title{
-                    top:  30.92783505154639vh; //300px(970)
-                    >h1{
+
+                .title {
+                    top: 30.92783505154639vh; //300px(970)
+
+                    >h1 {
                         font-size: 50px;
                         height: 164px;
-                        >span{
-                            &:nth-of-type(2){
+
+                        >span {
+                            &:nth-of-type(2) {
                                 top: 80px;
                             }
+
                             font-size: 50px;
-                            >em{
+
+                            >em {
                                 font-size: 50px;
                             }
                         }
@@ -1271,22 +1580,28 @@ body {
                 }
             }
         }
-        .row2-wrap{
+
+        .row2-wrap {
             width: 100%;
-            .row2{
+
+            .row2 {
                 width: 100%;
-                .row2-text{
+
+                .row2-text {
                     height: auto;
-                    >p{
+
+                    >p {
                         width: 768px;
                         margin: 0 auto;
                     }
-                    .row2-text-section1{
+
+                    .row2-text-section1 {
                         float: none;
                         width: 768px;
                         margin: 0 auto;
                     }
-                    .row2-text-section2{
+
+                    .row2-text-section2 {
                         float: none;
                         width: 768px;
                         margin: 40px auto 0;
@@ -1294,13 +1609,16 @@ body {
                 }
             }
         }
-        .row3-wrap{
-            .row3{
+
+        .row3-wrap {
+            .row3 {
                 width: 100%;
-                .row3-text{
-                    .row3-text-section1{
+
+                .row3-text {
+                    .row3-text-section1 {
                         height: auto;
-                        .row3-text-section1-1{
+
+                        .row3-text-section1-1 {
                             float: none;
                             width: 100%;
                             max-width: 800px;
@@ -1308,54 +1626,63 @@ body {
                             margin: 0 auto;
                             padding: 30px;
                         }
-                        .row3-text-section1-2{
+
+                        .row3-text-section1-2 {
                             float: none;
                             width: 100%;
                             max-width: 800px;
                             height: auto;
                             margin: 0 auto;
                             padding: 30px;
-                            h4{
+
+                            h4 {
                                 font-size: 34px;
-                                span{
+
+                                span {
                                     width: 15%;
                                 }
                             }
                         }
                     }
-                    .row3-text-section2{
+
+                    .row3-text-section2 {
                         padding: 10px;
-                        .row3-table{
+
+                        .row3-table {
                             width: 100%;
                             max-width: 800px;
                             margin: 0 auto;
-                            thead{
-                                >tr{
-                                    &:nth-of-type(1){
+
+                            thead {
+                                >tr {
+                                    &:nth-of-type(1) {
                                         width: 10%;
                                     }
-                                    &:nth-of-type(2){
+
+                                    &:nth-of-type(2) {
                                         width: 30%;
                                     }
-                                    &:nth-of-type(3){
+
+                                    &:nth-of-type(3) {
                                         width: 60%;
                                     }
                                 }
                             }
-                            tbody{
-                                >tr{
+
+                            tbody {
+                                >tr {
                                     >td {
                                         &:nth-of-type(1) {
                                             text-align: center;
                                             width: 10%;
                                         }
-    
+
                                         &:nth-of-type(2) {
                                             text-align: center;
                                             text-indent: 0;
                                             width: 30%;
                                         }
-    
+
                                         &:nth-of-type(3) {
                                             text-indent: 0;
                                             width: 60%;
@@ -1368,13 +1695,16 @@ body {
                 }
             }
         }
-        .row4-wrap{
-            .row4{
+
+        .row4-wrap {
+            .row4 {
                 width: 100%;
-                .row4-text{
-                    .row4-text-section1{
+
+                .row4-text {
+                    .row4-text-section1 {
                         height: auto;
-                        .row4-text-section1-1{
+
+                        .row4-text-section1-1 {
                             float: none;
                             width: 100%;
                             max-width: 800px;
@@ -1382,54 +1712,63 @@ body {
                             margin: 0 auto;
                             padding: 30px;
                         }
-                        .row4-text-section1-2{
+
+                        .row4-text-section1-2 {
                             float: none;
                             width: 100%;
                             max-width: 800px;
                             height: auto;
                             margin: 0 auto;
                             padding: 30px;
-                            h4{
+
+                            h4 {
                                 font-size: 34px;
-                                span{
+
+                                span {
                                     width: 15%;
                                 }
                             }
                         }
                     }
-                    .row4-text-section2{
+
+                    .row4-text-section2 {
                         padding: 10px;
-                        .row4-table{
+
+                        .row4-table {
                             width: 100%;
                             max-width: 800px;
                             margin: 0 auto;
-                            thead{
-                                >tr{
-                                    &:nth-of-type(1){
+
+                            thead {
+                                >tr {
+                                    &:nth-of-type(1) {
                                         width: 10%;
                                     }
-                                    &:nth-of-type(2){
+
+                                    &:nth-of-type(2) {
                                         width: 30%;
                                     }
-                                    &:nth-of-type(3){
+
+                                    &:nth-of-type(3) {
                                         width: 60%;
                                     }
                                 }
                             }
-                            tbody{
-                                >tr{
+
+                            tbody {
+                                >tr {
                                     >td {
                                         &:nth-of-type(1) {
                                             text-align: center;
                                             width: 10%;
                                         }
-    
+
                                         &:nth-of-type(2) {
                                             text-align: center;
                                             text-indent: 0;
                                             width: 30%;
                                         }
-    
+
                                         &:nth-of-type(3) {
                                             text-indent: 0;
                                             width: 60%;
@@ -1442,13 +1781,16 @@ body {
                 }
             }
         }
-        .row5-wrap{
-            .row5{
+
+        .row5-wrap {
+            .row5 {
                 width: 100%;
-                .row5-text{
-                    .row5-text-section1{
+
+                .row5-text {
+                    .row5-text-section1 {
                         height: auto;
-                        .row5-text-section1-1{
+
+                        .row5-text-section1-1 {
                             float: none;
                             width: 100%;
                             max-width: 800px;
@@ -1456,54 +1798,63 @@ body {
                             margin: 0 auto;
                             padding: 30px;
                         }
-                        .row5-text-section1-2{
+
+                        .row5-text-section1-2 {
                             float: none;
                             width: 100%;
                             max-width: 800px;
                             height: auto;
                             margin: 0 auto;
                             padding: 30px;
-                            h4{
+
+                            h4 {
                                 font-size: 34px;
-                                span{
+
+                                span {
                                     width: 15%;
                                 }
                             }
                         }
                     }
-                    .row5-text-section2{
+
+                    .row5-text-section2 {
                         padding: 10px;
-                        .row5-table{
+
+                        .row5-table {
                             width: 100%;
                             max-width: 800px;
                             margin: 0 auto;
-                            thead{
-                                >tr{
-                                    &:nth-of-type(1){
+
+                            thead {
+                                >tr {
+                                    &:nth-of-type(1) {
                                         width: 10%;
                                     }
-                                    &:nth-of-type(2){
+
+                                    &:nth-of-type(2) {
                                         width: 30%;
                                     }
-                                    &:nth-of-type(3){
+
+                                    &:nth-of-type(3) {
                                         width: 60%;
                                     }
                                 }
                             }
-                            tbody{
-                                >tr{
+
+                            tbody {
+                                >tr {
                                     >td {
                                         &:nth-of-type(1) {
                                             text-align: center;
                                             width: 10%;
                                         }
-    
+
                                         &:nth-of-type(2) {
                                             text-align: center;
                                             text-indent: 0;
                                             width: 30%;
                                         }
-    
+
                                         &:nth-of-type(3) {
                                             text-indent: 0;
                                             width: 60%;
@@ -1516,40 +1867,82 @@ body {
                 }
             }
         }
-        .row6-wrap{
-            .row6{
+
+        .row6-wrap {
+            .row6 {
                 width: 100%;
-                .row6-text{
+
+                .row6-text {
                     height: auto;
-                    .card{
+
+                    .card {
                         float: none;
                         margin: 0 auto 30px 50px;
-                        pointer-events: none;
                         max-width: 540px;
                         width: 42.05729166666667vw; //323px(768)
-                        .cardImg{
+
+                        &:hover .cardImg,
+                        &:focus .cardImg {
+                            width: 375px;
+                            height: 250px;
+                            left: unset;
+                            right: -345px;
+                            top: 30px;
+                            transition: none;
+                        }
+
+                        .cardImg {
                             width: 375px;
                             height: 250px;
                             top: 30px;
                             left: unset;
                             right: -345px;
+                            transition: none;
                         }
-                        .cardTxt{
-                            >div{
-                                h4{
+
+                        .cardTxt {
+                            >div {
+                                h4 {
                                     padding-left: 0;
+                                }
+
+                                .txt-section1 {
+                                    padding-left: 0;
+
+                                    >li {
+                                        padding-left: 0;
+                                    }
                                 }
                             }
                         }
-                        &:nth-of-type(2n){
+
+                        &:nth-of-type(2n) {
                             margin: 0 50px 30px auto;
-                            .cardImg{
+
+                                &:hover .cardImg,
+                                &:focus .cardImg {
+                                    width: 375px;
+                                    height: 250px;
+                                    left: -345px;
+                                    right: unset;
+                                    transition: none;
+                                }
+
+                            .cardImg {
                                 left: -345px;
+                                right: unset;
+                                transition: none;
                             }
-                            .cardTxt{
-                                >div{
-                                    h4{
-                                        text-align: right;
+
+                            .cardTxt {
+                                >div {
+                                    h4 {
+                                        text-align: left;
+                                        padding-left: 30px;
+                                    }
+
+                                    .txt-section1 {
+                                        padding-left: 30px;
                                     }
                                 }
                             }
@@ -1558,12 +1951,15 @@ body {
                 }
             }
         }
-        .row7-wrap{
-            .row7{
+
+        .row7-wrap {
+            .row7 {
                 width: 100%;
-                .row7-text{
+
+                .row7-text {
                     padding: 30px;
-                    >.contact-form-wrap{
+
+                    >.contact-form-wrap {
                         width: 100%;
                         max-width: 760px;
                     }
@@ -1574,14 +1970,16 @@ body {
 }
 
 @media(max-width: 767px) {
-    #header{
-        .gnb-wrap{
+    #header {
+        .gnb-wrap {
             display: none;
         }
-        .all-menu-wrap{
+
+        .all-menu-wrap {
             position: relative;
             display: block;
-            .btn-all-menu-open{
+
+            .btn-all-menu-open {
                 position: absolute;
                 top: 30px;
                 right: 30px;
@@ -1593,7 +1991,8 @@ body {
                 background-size: cover;
                 cursor: pointer;
             }
-            .all-menu{
+
+            .all-menu {
                 position: fixed;
                 top: 0;
                 right: -100vw;
@@ -1603,7 +2002,8 @@ body {
                 color: #fff;
                 transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
                 -webkit-transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
-                .btn-all-menu-close{
+
+                .btn-all-menu-close {
                     position: absolute;
                     top: 30px;
                     right: 30px;
@@ -1615,28 +2015,35 @@ body {
                     background-size: cover;
                     cursor: pointer;
                 }
-                >ul{
+
+                >ul {
                     position: relative;
                     left: 0;
                     top: 50%;
                     transform: translateY(-50%);
                     padding-left: 20px;
-                    >li{
+
+                    >li {
                         padding-bottom: 15px;
-                        &:nth-of-type(3){
+
+                        &:nth-of-type(3) {
                             padding-bottom: 0;
                         }
-                        >a{
+
+                        >a {
                             position: relative;
                             display: inline-block;
                             font-size: 32px;
                             font-weight: 700;
-                            &:hover, &:focus{
-                                &::after{
+
+                            &:hover,
+                            &:focus {
+                                &::after {
                                     width: 100%;
                                 }
                             }
-                            &::after{
+
+                            &::after {
                                 position: absolute;
                                 content: '';
                                 bottom: 0;
@@ -1649,28 +2056,35 @@ body {
                                 -webkit-transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
                             }
                         }
-                        >ul{
+
+                        >ul {
                             height: 0px;
                             overflow: hidden;
                             padding: 10px 0 0 10px;
                             transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
                             -webkit-transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
-                            &.active{
+
+                            &.active {
                                 height: 265px;
                             }
-                            >li{
+
+                            >li {
                                 padding-bottom: 10px;
-                                >a{
+
+                                >a {
                                     font-size: 18px;
-                                    >em{
+
+                                    >em {
                                         color: $mainColor-4;
                                         font-size: 22px;
                                     }
-                                    >span{
+
+                                    >span {
                                         padding-left: 25px;
                                     }
                                 }
-                                &:nth-of-type(4){
+
+                                &:nth-of-type(4) {
                                     padding-bottom: 0;
                                 }
                             }
@@ -1680,75 +2094,90 @@ body {
             }
         }
     }
-    #container{
-        .row1-wrap{
-            .row1{
+
+    #container {
+        .row1-wrap {
+            .row1 {
                 width: 100%;
-                .title{
+
+                .title {
                     margin: 0 auto;
-                    top:  50%;
+                    top: 50%;
                     transform: translateY(-50%);
-                    >h1{
+
+                    >h1 {
                         padding-left: 0;
                         font-size: 45px;
                         text-align: center;
                         height: 147px;
-                        >span{
+
+                        >span {
                             font-size: 45px;
-                            &:nth-of-type(2){
+
+                            &:nth-of-type(2) {
                                 width: 100vw;
                                 top: 72px;
                                 left: 50%;
                                 transform: translateX(-50%);
                             }
-                            em{
+
+                            em {
                                 font-size: 45px;
                             }
                         }
                     }
-                    >p{
+
+                    >p {
                         display: none;
                     }
                 }
             }
         }
-        .row2-wrap{
+
+        .row2-wrap {
             width: 100%;
             background-color: #01092b;
             color: #e2e2e2;
-            .row2{
+
+            .row2 {
                 width: 100%;
-                .row2-title{
-                    h2{
+
+                .row2-title {
+                    h2 {
                         font-size: 36px;
                     }
-                    h3{
+
+                    h3 {
                         font-size: 24px;
                     }
                 }
-                .row2-text{
+
+                .row2-text {
                     height: auto;
-                    >p{
+
+                    >p {
                         font-size: 18px;
                         width: 100%;
                         margin: 0 auto;
 
-                        span{
+                        span {
                             font-size: 24px;
                         }
                     }
-                    .row2-text-section1{
+
+                    .row2-text-section1 {
                         float: none;
                         width: 100%;
                         height: auto;
                         margin: 0 auto;
                         padding: 0 10px 0 40px;
-                        
-                        br{
+
+                        br {
                             display: none;
                         }
                     }
-                    .row2-text-section2{
+
+                    .row2-text-section2 {
                         float: none;
                         width: 100%;
                         height: auto;
@@ -1756,11 +2185,13 @@ body {
                         padding: 40px 10px 0 10px;
                         background-color: #1a1a1a;
                         color: #e2e2e2;
-                        ul{
-                            li{
+
+                        ul {
+                            li {
                                 height: 120px;
                                 text-align: center;
-                                >img{
+
+                                >img {
                                     width: 70px;
                                     height: 70px;
                                     display: block;
@@ -1774,83 +2205,102 @@ body {
                 }
             }
         }
-        .row3-wrap{
-            .row3{
+
+        .row3-wrap {
+            .row3 {
                 width: 100%;
-                .row3-title{
-                    h2{
+
+                .row3-title {
+                    h2 {
                         font-size: 36px;
                     }
-                    h3{
+
+                    h3 {
                         font-size: 24px;
                     }
                 }
-                .row3-text{
-                    .row3-text-section1{
+
+                .row3-text {
+                    .row3-text-section1 {
                         height: auto;
-                        .row3-text-section1-1{
+
+                        .row3-text-section1-1 {
                             float: none;
                             width: 100%;
                             height: auto;
                             margin: 0 auto;
                             padding: 10px;
                         }
-                        .row3-text-section1-2{
+
+                        .row3-text-section1-2 {
                             float: none;
                             width: 100%;
                             max-width: 800px;
                             height: auto;
                             margin: 0 auto;
                             padding: 10px;
-                            h4{
+
+                            h4 {
                                 font-size: 22px;
                                 text-align: center;
                                 margin-bottom: 10px;
-                                span{
+
+                                span {
                                     display: block;
                                     width: 100%;
                                     font-size: 36px;
                                 }
                             }
-                            >ul{
+
+                            >ul {
                                 font-size: 16px;
-                                >li{
-                                    >span{
+
+                                >li {
+                                    >span {
                                         width: 45%;
                                     }
-                                    &:nth-of-type(3){
+
+                                    &:nth-of-type(3) {
                                         font-size: 14px;
-                                        >span{
+
+                                        >span {
                                             font-size: 16px;
                                         }
                                     }
                                 }
-                                .row3-text-section1-2-palette{
-                                    >ul{
+
+                                .row3-text-section1-2-palette {
+                                    >ul {
                                         width: calc(55% - 4px);
                                     }
                                 }
                             }
                         }
                     }
-                    .row3-text-section2{
+
+                    .row3-text-section2 {
                         padding: 10px;
-                        .row3-table{
+
+                        .row3-table {
                             width: 100%;
                             margin: 0 auto;
-                            thead{
+
+                            thead {
                                 display: none;
                             }
-                            tbody{
-                                >tr{
+
+                            tbody {
+                                >tr {
                                     display: block;
                                     border-bottom: none;
                                     border-top: 1px solid #cccccc;
                                     height: auto;
                                     margin-bottom: 40px;
+
                                     >td {
                                         display: block;
                                         width: 100%;
+
                                         &:nth-of-type(1) {
                                             position: relative;
                                             text-align: left;
@@ -1858,7 +2308,8 @@ body {
                                             width: 100%;
                                             padding-left: 32%;
                                             border-bottom: 1px solid #cccccc;
-                                            &::after{
+
+                                            &::after {
                                                 position: absolute;
                                                 content: 'Category';
                                                 left: 0;
@@ -1870,7 +2321,7 @@ body {
                                                 padding-left: 10px;
                                             }
                                         }
-    
+
                                         &:nth-of-type(2) {
                                             position: relative;
                                             text-align: left;
@@ -1878,7 +2329,8 @@ body {
                                             width: 100%;
                                             padding-left: 32%;
                                             border-bottom: 1px solid #cccccc;
-                                            &::after{
+
+                                            &::after {
                                                 position: absolute;
                                                 content: 'Source';
                                                 left: 0;
@@ -1890,7 +2342,7 @@ body {
                                                 padding-left: 10px;
                                             }
                                         }
-    
+
                                         &:nth-of-type(3) {
                                             position: relative;
                                             text-align: left;
@@ -1898,7 +2350,8 @@ body {
                                             width: 100%;
                                             padding-left: 32%;
                                             border-bottom: 1px solid #cccccc;
-                                            &::after{
+
+                                            &::after {
                                                 position: absolute;
                                                 content: 'keywords';
                                                 left: 0;
@@ -1918,83 +2371,102 @@ body {
                 }
             }
         }
-        .row4-wrap{
-            .row4{
+
+        .row4-wrap {
+            .row4 {
                 width: 100%;
-                .row4-title{
-                    h2{
+
+                .row4-title {
+                    h2 {
                         font-size: 36px;
                     }
-                    h3{
+
+                    h3 {
                         font-size: 24px;
                     }
                 }
-                .row4-text{
-                    .row4-text-section1{
+
+                .row4-text {
+                    .row4-text-section1 {
                         height: auto;
-                        .row4-text-section1-1{
+
+                        .row4-text-section1-1 {
                             float: none;
                             width: 100%;
                             height: auto;
                             margin: 0 auto;
                             padding: 10px;
                         }
-                        .row4-text-section1-2{
+
+                        .row4-text-section1-2 {
                             float: none;
                             width: 100%;
                             max-width: 800px;
                             height: auto;
                             margin: 0 auto;
                             padding: 10px;
-                            h4{
+
+                            h4 {
                                 font-size: 22px;
                                 text-align: center;
                                 margin-bottom: 10px;
-                                span{
+
+                                span {
                                     display: block;
                                     width: 100%;
                                     font-size: 36px;
                                 }
                             }
-                            >ul{
+
+                            >ul {
                                 font-size: 16px;
-                                >li{
-                                    >span{
+
+                                >li {
+                                    >span {
                                         width: 45%;
                                     }
-                                    &:nth-of-type(3){
+
+                                    &:nth-of-type(3) {
                                         font-size: 14px;
-                                        >span{
+
+                                        >span {
                                             font-size: 16px;
                                         }
                                     }
                                 }
-                                .row4-text-section1-2-palette{
-                                    >ul{
+
+                                .row4-text-section1-2-palette {
+                                    >ul {
                                         width: calc(55% - 4px);
                                     }
                                 }
                             }
                         }
                     }
-                    .row4-text-section2{
+
+                    .row4-text-section2 {
                         padding: 10px;
-                        .row4-table{
+
+                        .row4-table {
                             width: 100%;
                             margin: 0 auto;
-                            thead{
+
+                            thead {
                                 display: none;
                             }
-                            tbody{
-                                >tr{
+
+                            tbody {
+                                >tr {
                                     display: block;
                                     border-bottom: none;
                                     border-top: 1px solid #cccccc;
                                     height: auto;
                                     margin-bottom: 40px;
+
                                     >td {
                                         display: block;
                                         width: 100%;
+
                                         &:nth-of-type(1) {
                                             position: relative;
                                             text-align: left;
@@ -2002,7 +2474,8 @@ body {
                                             width: 100%;
                                             padding-left: 32%;
                                             border-bottom: 1px solid #cccccc;
-                                            &::after{
+
+                                            &::after {
                                                 position: absolute;
                                                 content: 'Category';
                                                 left: 0;
@@ -2014,7 +2487,7 @@ body {
                                                 padding-left: 10px;
                                             }
                                         }
-    
+
                                         &:nth-of-type(2) {
                                             position: relative;
                                             text-align: left;
@@ -2022,7 +2495,8 @@ body {
                                             width: 100%;
                                             padding-left: 32%;
                                             border-bottom: 1px solid #cccccc;
-                                            &::after{
+
+                                            &::after {
                                                 position: absolute;
                                                 content: 'Source';
                                                 left: 0;
@@ -2034,7 +2508,7 @@ body {
                                                 padding-left: 10px;
                                             }
                                         }
-    
+
                                         &:nth-of-type(3) {
                                             position: relative;
                                             text-align: left;
@@ -2042,7 +2516,8 @@ body {
                                             width: 100%;
                                             padding-left: 32%;
                                             border-bottom: 1px solid #cccccc;
-                                            &::after{
+
+                                            &::after {
                                                 position: absolute;
                                                 content: 'keywords';
                                                 left: 0;
@@ -2062,83 +2537,102 @@ body {
                 }
             }
         }
-        .row5-wrap{
-            .row5{
+
+        .row5-wrap {
+            .row5 {
                 width: 100%;
-                .row5-title{
-                    h2{
+
+                .row5-title {
+                    h2 {
                         font-size: 36px;
                     }
-                    h3{
+
+                    h3 {
                         font-size: 24px;
                     }
                 }
-                .row5-text{
-                    .row5-text-section1{
+
+                .row5-text {
+                    .row5-text-section1 {
                         height: auto;
-                        .row5-text-section1-1{
+
+                        .row5-text-section1-1 {
                             float: none;
                             width: 100%;
                             height: auto;
                             margin: 0 auto;
                             padding: 10px;
                         }
-                        .row5-text-section1-2{
+
+                        .row5-text-section1-2 {
                             float: none;
                             width: 100%;
                             max-width: 800px;
                             height: auto;
                             margin: 0 auto;
                             padding: 10px;
-                            h4{
+
+                            h4 {
                                 font-size: 22px;
                                 text-align: center;
                                 margin-bottom: 10px;
-                                span{
+
+                                span {
                                     display: block;
                                     width: 100%;
                                     font-size: 36px;
                                 }
                             }
-                            >ul{
+
+                            >ul {
                                 font-size: 16px;
-                                >li{
-                                    >span{
+
+                                >li {
+                                    >span {
                                         width: 45%;
                                     }
-                                    &:nth-of-type(3){
+
+                                    &:nth-of-type(3) {
                                         font-size: 14px;
-                                        >span{
+
+                                        >span {
                                             font-size: 16px;
                                         }
                                     }
                                 }
-                                .row5-text-section1-2-palette{
-                                    >ul{
+
+                                .row5-text-section1-2-palette {
+                                    >ul {
                                         width: calc(55% - 4px);
                                     }
                                 }
                             }
                         }
                     }
-                    .row5-text-section2{
+
+                    .row5-text-section2 {
                         padding: 10px;
-                        .row5-table{
+
+                        .row5-table {
                             width: 100%;
                             margin: 0 auto;
-                            thead{
+
+                            thead {
                                 display: none;
                             }
-                            tbody{
-                                >tr{
+
+                            tbody {
+                                >tr {
                                     display: block;
                                     border-bottom: none;
                                     border-top: 1px solid #cccccc;
                                     height: auto;
                                     margin-bottom: 40px;
+
                                     >td {
                                         display: block;
                                         width: 100%;
+
                                         &:nth-of-type(1) {
                                             position: relative;
                                             text-align: left;
@@ -2146,7 +2640,8 @@ body {
                                             width: 100%;
                                             padding-left: 32%;
                                             border-bottom: 1px solid #cccccc;
-                                            &::after{
+
+                                            &::after {
                                                 position: absolute;
                                                 content: 'Category';
                                                 left: 0;
@@ -2158,7 +2653,7 @@ body {
                                                 padding-left: 10px;
                                             }
                                         }
-    
+
                                         &:nth-of-type(2) {
                                             position: relative;
                                             text-align: left;
@@ -2166,7 +2661,8 @@ body {
                                             width: 100%;
                                             padding-left: 32%;
                                             border-bottom: 1px solid #cccccc;
-                                            &::after{
+
+                                            &::after {
                                                 position: absolute;
                                                 content: 'Source';
                                                 left: 0;
@@ -2178,7 +2674,7 @@ body {
                                                 padding-left: 10px;
                                             }
                                         }
-    
+
                                         &:nth-of-type(3) {
                                             position: relative;
                                             text-align: left;
@@ -2186,7 +2682,8 @@ body {
                                             width: 100%;
                                             padding-left: 32%;
                                             border-bottom: 1px solid #cccccc;
-                                            &::after{
+
+                                            &::after {
                                                 position: absolute;
                                                 content: 'keywords';
                                                 left: 0;
@@ -2206,15 +2703,18 @@ body {
                 }
             }
         }
-        .row6-wrap{
-            .row6{
+
+        .row6-wrap {
+            .row6 {
                 width: 100%;
-                .row6-title{
-                    h2{
+
+                .row6-title {
+                    h2 {
                         font-size: 36px;
                     }
                 }
-                .row6-text{
+
+                .row6-text {
                     height: 440px;
                     overflow-x: auto;
                     white-space: nowrap;
@@ -2223,14 +2723,15 @@ body {
                     scroll-snap-type: x mandatory;
                     -webkit-scroll-padding-right: 8px;
                     scroll-padding-right: 8px;
-                    .card{
+
+                    .card {
                         float: none;
                         display: inline-block;
-                        pointer-events: none;
                         width: 340px;
                         height: 400px;
                         margin: 30px 10px 10px;
-                        .cardImg{
+                        &:hover .cardImg, 
+                        &:focus .cardImg{
                             width: calc(100% - 60px);
                             height: 187.33px;
                             top: -30px;
@@ -2239,24 +2740,67 @@ body {
                             transform: translateX(-50%);
                             border: 1px solid #f2f2f2;
                         }
-                        .cardTxt{
-                            >div{
-                                h4{
+                        &:nth-of-type(2n){
+                            &:hover .cardImg, 
+                            &:focus .cardImg{
+                                left: 50%;
+                                right: unset;
+                            }
+                        }
+
+                        .cardImg {
+                            width: calc(100% - 60px);
+                            height: 187.33px;
+                            top: -30px;
+                            left: 50%;
+                            right: unset;
+                            transform: translateX(-50%);
+                            border: 1px solid #f2f2f2;
+                        }
+
+                        .cardTxt {
+                            >div {
+                                h4 {
                                     font-size: 18px;
                                     padding-left: 0;
                                     padding-top: 140px; //150px(360)
                                 }
+
+                                .txt-section1 {
+                                    padding: 10px 0;
+                                    @include lineClamp(128px, 3);
+
+                                    >li {
+                                        display: block;
+                                        padding-left: 0;
+                                    }
+
+                                    .row6-text-section1-txtarea {
+                                        display: none;
+                                    }
+                                }
+
+                                .txt-section2 {
+                                    .row6-text-section2-button {
+                                        >a {
+                                            margin: 10px 10px 0;
+                                        }
+                                    }
+                                }
                             }
                         }
-                        &:nth-of-type(2n){
+
+                        &:nth-of-type(2n) {
                             margin: 30px 10px 10px;
-                            .cardImg{
+
+                            .cardImg {
                                 left: 50%;
                                 transform: translateX(-50%);
                             }
-                            .cardTxt{
-                                >div{
-                                    h4{
+
+                            .cardTxt {
+                                >div {
+                                    h4 {
                                         text-align: left;
                                     }
                                 }
@@ -2266,17 +2810,21 @@ body {
                 }
             }
         }
-        .row7-wrap{
-            .row7{
+
+        .row7-wrap {
+            .row7 {
                 width: 100%;
-                .row7-title{
-                    h2{
+
+                .row7-title {
+                    h2 {
                         font-size: 36px;
                     }
                 }
-                .row7-text{
+
+                .row7-text {
                     padding: 10px;
-                    >.contact-form-wrap{
+
+                    >.contact-form-wrap {
                         width: 100%;
                         max-width: 760px;
                         padding: 30px;

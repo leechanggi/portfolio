@@ -214,6 +214,10 @@ input::-webkit-search-results-decoration {
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font: 16px/1.6 'Red Hat Display', 'Noto Sans KR', Malgun Gothic, "맑은 고딕", "dotum", "돋움", "AppleGothic", sans-serif;
   font-weight: normal;
@@ -1188,10 +1192,194 @@ body {
   font-size: 24px;
   font-weight: 700;
   padding-left: 170px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 #container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section1 {
-  padding-left: 170px;
+  padding: 10px 0 0 30px;
+  width: 100%;
+  font-size: 18px;
+  vertical-align: middle;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  height: 240px;
+  overflow: hidden;
+}
+
+#container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section1 > li {
+  padding-left: 140px;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section1 > li > span {
+  display: inline-block;
+  width: 40%;
+  padding-left: 10px;
+}
+
+#container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section1 .row6-text-section1-palette > ul {
+  display: inline-block;
+  width: calc(60% - 4px);
+}
+
+#container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+#container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(1) {
+  background-color: #1428a0;
+}
+
+#container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(2) {
+  background-color: #222222;
+}
+
+#container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(3) {
+  background-color: #555555;
+}
+
+#container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(4) {
+  background-color: #f4f4f4;
+  border: 1px solid #c4c4c4;
+}
+
+#container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section1 .row6-text-section1-txtarea {
+  padding-left: 0px;
+}
+
+#container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section1 .row6-text-section1-txtarea > a {
+  color: #1A32C6;
+}
+
+#container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section1 .row6-text-section1-txtarea > a:hover {
+  -webkit-text-decoration: underline 1px #1A32C6;
+          text-decoration: underline 1px #1A32C6;
+}
+
+#container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section2 {
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+
+#container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section2 .row6-text-section2-button {
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+}
+
+#container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section2 .row6-text-section2-button > a {
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  -webkit-box-shadow: 3px 3px 10px #aeaeae, -4px -4px 10px #fff;
+          box-shadow: 3px 3px 10px #aeaeae, -4px -4px 10px #fff;
+  background-color: #081460;
+  color: #fff;
+  transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  -webkit-transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+}
+
+#container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section2 .row6-text-section2-button > a:hover, #container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section2 .row6-text-section2-button > a:focus {
+  background-color: #FFCE4B;
+  color: #081460;
+  font-weight: 700;
+}
+
+#container .row6-wrap .row6 .row6-text .card:nth-of-type(2) .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(1) {
+  background-color: #ed1b29;
+}
+
+#container .row6-wrap .row6 .row6-text .card:nth-of-type(2) .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(2) {
+  background-color: #464242;
+}
+
+#container .row6-wrap .row6 .row6-text .card:nth-of-type(2) .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(3) {
+  background-color: #2e2a2a;
+}
+
+#container .row6-wrap .row6 .row6-text .card:nth-of-type(2) .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(4) {
+  background-color: #62030c;
+  border: none;
+}
+
+#container .row6-wrap .row6 .row6-text .card:nth-of-type(3) .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(1) {
+  background-color: #ec1d25;
+}
+
+#container .row6-wrap .row6 .row6-text .card:nth-of-type(3) .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(2) {
+  background-color: #555555;
+}
+
+#container .row6-wrap .row6 .row6-text .card:nth-of-type(3) .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(3) {
+  background-color: #222222;
+}
+
+#container .row6-wrap .row6 .row6-text .card:nth-of-type(3) .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(4) {
+  background-color: #cccccc;
+  border: none;
+}
+
+#container .row6-wrap .row6 .row6-text .card:nth-of-type(4) .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(1) {
+  background-color: #0066c1;
+}
+
+#container .row6-wrap .row6 .row6-text .card:nth-of-type(4) .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(2) {
+  background-color: #e72a00;
+}
+
+#container .row6-wrap .row6 .row6-text .card:nth-of-type(4) .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(3) {
+  background-color: #222222;
+}
+
+#container .row6-wrap .row6 .row6-text .card:nth-of-type(5) .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(1) {
+  background-color: #009b75;
+}
+
+#container .row6-wrap .row6 .row6-text .card:nth-of-type(5) .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(2) {
+  background-color: #CEDA00;
+}
+
+#container .row6-wrap .row6 .row6-text .card:nth-of-type(5) .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(3) {
+  background-color: #555555;
+}
+
+#container .row6-wrap .row6 .row6-text .card:nth-of-type(5) .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(4) {
+  background-color: #eeeeee;
+}
+
+#container .row6-wrap .row6 .row6-text .card:nth-of-type(6) .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(1) {
+  background-color: #00407D;
+}
+
+#container .row6-wrap .row6 .row6-text .card:nth-of-type(6) .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(2) {
+  background-color: #3d3d3d;
+}
+
+#container .row6-wrap .row6 .row6-text .card:nth-of-type(6) .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(3) {
+  background-color: #cccccc;
+}
+
+#container .row6-wrap .row6 .row6-text .card:nth-of-type(6) .cardTxt > div .txt-section1 .row6-text-section1-palette > ul > li:nth-of-type(4) {
+  background-color: #f5f5f5;
 }
 
 #container .row6-wrap .row6 .row6-text .card:nth-of-type(2n) {
@@ -1217,6 +1405,10 @@ body {
 }
 
 #container .row6-wrap .row6 .row6-text .card:nth-of-type(2n) .cardTxt > div .txt-section1 {
+  padding-left: 0;
+}
+
+#container .row6-wrap .row6 .row6-text .card:nth-of-type(2n) .cardTxt > div .txt-section1 > li {
   padding-left: 0;
 }
 
@@ -1366,6 +1558,7 @@ body {
     color: #fff;
     transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
     -webkit-transition: all 300ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+    z-index: 999;
   }
   #header .all-menu-wrap .all-menu .btn-all-menu-close {
     position: absolute;
@@ -1392,6 +1585,9 @@ body {
   }
   #header .all-menu-wrap .all-menu > ul > li:nth-of-type(3) {
     padding-bottom: 0;
+    font-size: 32px;
+    font-weight: 700;
+    cursor: pointer;
   }
   #header .all-menu-wrap .all-menu > ul > li > a {
     position: relative;
@@ -1427,9 +1623,12 @@ body {
   }
   #header .all-menu-wrap .all-menu > ul > li > ul > li {
     padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
   }
   #header .all-menu-wrap .all-menu > ul > li > ul > li > a {
     font-size: 18px;
+    font-weight: 400;
   }
   #header .all-menu-wrap .all-menu > ul > li > ul > li > a > em {
     color: #FFCE4B;
@@ -1666,9 +1865,18 @@ body {
   #container .row6-wrap .row6 .row6-text .card {
     float: none;
     margin: 0 auto 30px 50px;
-    pointer-events: none;
     max-width: 540px;
     width: 42.05729166666667vw;
+  }
+  #container .row6-wrap .row6 .row6-text .card:hover .cardImg,
+  #container .row6-wrap .row6 .row6-text .card:focus .cardImg {
+    width: 375px;
+    height: 250px;
+    left: unset;
+    right: -345px;
+    top: 30px;
+    -webkit-transition: none;
+    transition: none;
   }
   #container .row6-wrap .row6 .row6-text .card .cardImg {
     width: 375px;
@@ -1676,18 +1884,42 @@ body {
     top: 30px;
     left: unset;
     right: -345px;
+    -webkit-transition: none;
+    transition: none;
   }
   #container .row6-wrap .row6 .row6-text .card .cardTxt > div h4 {
+    padding-left: 0;
+  }
+  #container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section1 {
+    padding-left: 0;
+  }
+  #container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section1 > li {
     padding-left: 0;
   }
   #container .row6-wrap .row6 .row6-text .card:nth-of-type(2n) {
     margin: 0 50px 30px auto;
   }
+  #container .row6-wrap .row6 .row6-text .card:nth-of-type(2n):hover .cardImg,
+  #container .row6-wrap .row6 .row6-text .card:nth-of-type(2n):focus .cardImg {
+    width: 375px;
+    height: 250px;
+    left: -345px;
+    right: unset;
+    -webkit-transition: none;
+    transition: none;
+  }
   #container .row6-wrap .row6 .row6-text .card:nth-of-type(2n) .cardImg {
     left: -345px;
+    right: unset;
+    -webkit-transition: none;
+    transition: none;
   }
   #container .row6-wrap .row6 .row6-text .card:nth-of-type(2n) .cardTxt > div h4 {
-    text-align: right;
+    text-align: left;
+    padding-left: 30px;
+  }
+  #container .row6-wrap .row6 .row6-text .card:nth-of-type(2n) .cardTxt > div .txt-section1 {
+    padding-left: 30px;
   }
   #container .row7-wrap .row7 {
     width: 100%;
@@ -2302,10 +2534,25 @@ body {
   #container .row6-wrap .row6 .row6-text .card {
     float: none;
     display: inline-block;
-    pointer-events: none;
     width: 340px;
     height: 400px;
     margin: 30px 10px 10px;
+  }
+  #container .row6-wrap .row6 .row6-text .card:hover .cardImg,
+  #container .row6-wrap .row6 .row6-text .card:focus .cardImg {
+    width: calc(100% - 60px);
+    height: 187.33px;
+    top: -30px;
+    left: 50%;
+    right: unset;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    border: 1px solid #f2f2f2;
+  }
+  #container .row6-wrap .row6 .row6-text .card:nth-of-type(2n):hover .cardImg,
+  #container .row6-wrap .row6 .row6-text .card:nth-of-type(2n):focus .cardImg {
+    left: 50%;
+    right: unset;
   }
   #container .row6-wrap .row6 .row6-text .card .cardImg {
     width: calc(100% - 60px);
@@ -2321,6 +2568,24 @@ body {
     font-size: 18px;
     padding-left: 0;
     padding-top: 140px;
+  }
+  #container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section1 {
+    padding: 10px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    height: 128px;
+    overflow: hidden;
+  }
+  #container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section1 > li {
+    display: block;
+    padding-left: 0;
+  }
+  #container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section1 .row6-text-section1-txtarea {
+    display: none;
+  }
+  #container .row6-wrap .row6 .row6-text .card .cardTxt > div .txt-section2 .row6-text-section2-button > a {
+    margin: 10px 10px 0;
   }
   #container .row6-wrap .row6 .row6-text .card:nth-of-type(2n) {
     margin: 30px 10px 10px;

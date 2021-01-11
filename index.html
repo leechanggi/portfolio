@@ -19,9 +19,9 @@
         <div class="gnb-wrap">
             <div class="gnb">
                 <ul>
-                    <li><a href="#">About & Skill</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact Info</a></li>
+                    <li><a href="#row2-wrap">About & Skill</a></li>
+                    <li><a href="#row3-wrap">Portfolio</a></li>
+                    <li><a href="#row7-wrap">Contact Info</a></li>
                 </ul>
             </div>
         </div>
@@ -30,25 +30,24 @@
             <div class="all-menu">
                 <input class="btn-all-menu-close" type="button" value="전체메뉴 닫기">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">About & Skill</a></li>
-                    <li>
-                        <a href="#">Portfolio</a>
+                    <li><a href="#row1-wrap">HOME</a></li>
+                    <li><a href="#row2-wrap">About & Skill</a></li>
+                    <li class="listBtn">Portfolio
                         <!-- <ul class="active"> -->
                         <ul>
-                            <li><a href="#"><em>01.</em> 첫 번째 포트폴리오<br><span>&#58; 삼천리 홈페이지 리뉴얼</span></a></li>
-                            <li><a href="#"><em>02.</em> 두 번째 포트폴리오<br><span>&#58; 유관순 열사 기념관 홈페이지 리뉴얼</span></a></li>
-                            <li><a href="#"><em>03.</em> 세 번째 포트폴리오<br><span>&#58; 세탁을 위한 사람들 홈페이지 리뉴얼</span></a></li>
-                            <li><a href="#"><em>04.</em> 포트폴리오 Etc.</a></li>
+                            <li><a href="#row3-wrap"><em>01.</em> 첫 번째 포트폴리오<br><span>&#58; 삼천리 홈페이지 리뉴얼</span></a></li>
+                            <li><a href="#row4-wrap"><em>02.</em> 두 번째 포트폴리오<br><span>&#58; 유관순 열사 기념관 홈페이지 리뉴얼</span></a></li>
+                            <li><a href="#row5-wrap"><em>03.</em> 세 번째 포트폴리오<br><span>&#58; 세탁을 위한 사람들 홈페이지 리뉴얼</span></a></li>
+                            <li><a href="#row6-wrap"><em>04.</em> 포트폴리오 Etc.</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Contact Info</a></li>
+                    <li><a href="#row7-wrap">Contact Info</a></li>
                 </ul>
             </div>
         </div>
     </header>
     <div id="container">
-        <div class="row1-wrap">
+        <div class="row1-wrap" id="row1-wrap">
             <div id="particles-js">
             </div>
             <div class="row1">
@@ -61,7 +60,7 @@
                 </div>  
             </div>
         </div>
-        <div class="row2-wrap">
+        <div class="row2-wrap" id="row2-wrap">
             <div class="row2">
                 <div class="row2-title">
                     <h2>About &amp; Skill</h2>
@@ -132,7 +131,7 @@
                 </div>
             </div>
         </div>
-        <div class="row3-wrap">
+        <div class="row3-wrap" id="row3-wrap">
             <div class="row3">
                 <div class="row3-title">
                     <h2>첫 번째 포트폴리오</h2>
@@ -349,7 +348,7 @@
                 </div>
             </div>
         </div>
-        <div class="row4-wrap">
+        <div class="row4-wrap" id="row4-wrap">
             <div class="row4">
                 <div class="row4-title">
                     <h2>두 번째 포트폴리오</h2>
@@ -553,7 +552,7 @@
                 </div>
             </div>
         </div>
-        <div class="row5-wrap">
+        <div class="row5-wrap" id="row5-wrap">
             <div class="row5">
                 <div class="row5-title">
                     <h2>세 번째 포트폴리오</h2>
@@ -678,7 +677,7 @@
                 </div>
             </div>
         </div>
-        <div class="row6-wrap">
+        <div class="row6-wrap" id="row6-wrap">
             <div class="row6">
                 <div class="row6-title">
                     <h2>Portfolio etc<span>&#41;</span></h2>
@@ -692,8 +691,28 @@
                         <div class="section6-1-txt cardTxt">
                             <div>
                                 <h4>삼성전자 홈페이지 리뉴얼</h4>
-                                <p class="txt-section1"></p>
-                                <p class="txt-section2"></p>
+                                <ul class="txt-section1">
+                                    <li><span>Viewport</span>반응형</li>
+                                    <li><span>IE support</span>IE9+</li>
+                                    <li class="row6-text-section1-palette">
+                                        <span>Palette</span>
+                                        <ul>
+                                            <li class="palette-items"></li>
+                                            <li class="palette-items"></li>
+                                            <li class="palette-items"></li>
+                                            <li class="palette-items"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="row6-text-section1-txtarea">
+                                        HTML, CSS(SCSS), JS, Jquery를 사용해 <a href="http://lxyex1379.dothome.co.kr/samsung/">삼성전자 홈페이지</a>와 <a href="http://lxyex1379.dothome.co.kr/samsung/member.html">회원가입</a> 페이지를 리뉴얼 하였습니다.
+                                    </li>
+                                </ul>
+                                <ul class="txt-section2">
+                                    <li class="row6-text-section2-button">
+                                        <a href="http://lxyex1379.dothome.co.kr/samsung" class="row6-btn-demo" target="-blank">DEMO</a>
+                                        <a href="https://github.com/leechanggi/samsung" class="row6-btn-repos" target="-blank">REPOS</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -704,8 +723,28 @@
                         <div class="section6-2-txt cardTxt">
                             <div>
                                 <h4>오리온 메인페이지 리뉴얼</h4>
-                                <p class="txt-section1"></p>
-                                <p class="txt-section2"></p>
+                                <ul class="txt-section1">
+                                    <li><span>Viewport</span>반응형</li>
+                                    <li><span>IE support</span>IE9+</li>
+                                    <li class="row6-text-section1-palette">
+                                        <span>Palette</span>
+                                        <ul>
+                                            <li class="palette-items"></li>
+                                            <li class="palette-items"></li>
+                                            <li class="palette-items"></li>
+                                            <li class="palette-items"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="row6-text-section1-txtarea">
+                                        HTML, CSS(SCSS)를 사용해 오리온 홈페이지 페이지를 리뉴얼 하였습니다. 첫번째 조별 프로젝트로 제가 한 부분만 추려 올렸습니다.
+                                    </li>
+                                </ul>
+                                <ul class="txt-section2">
+                                    <li class="row6-text-section2-button">
+                                        <a href="http://lxyex1379.dothome.co.kr/orion/" class="row6-btn-demo" target="-blank">DEMO</a>
+                                        <a href="https://github.com/leechanggi/orion_renewal" class="row6-btn-repos" target="-blank">REPOS</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -716,8 +755,28 @@
                         <div class="section6-3-txt cardTxt">
                             <div>
                                 <h4>일양약품 메인페이지 리뉴얼</h4>
-                                <p class="txt-section1"></p>
-                                <p class="txt-section2"></p>
+                                <ul class="txt-section1">
+                                    <li><span>Viewport</span>반응형</li>
+                                    <li><span>IE support</span>IE9+</li>
+                                    <li class="row6-text-section1-palette">
+                                        <span>Palette</span>
+                                        <ul>
+                                            <li class="palette-items"></li>
+                                            <li class="palette-items"></li>
+                                            <li class="palette-items"></li>
+                                            <li class="palette-items"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="row6-text-section1-txtarea">
+                                        HTML, CSS(SCSS), JS, Jquery를 사용해 일양약품 홈페이지 페이지를 리뉴얼 하였습니다.
+                                    </li>
+                                </ul>
+                                <ul class="txt-section2">
+                                    <li class="row6-text-section2-button">
+                                        <a href="http://lxyex1379.dothome.co.kr/ilyang/" class="row6-btn-demo" target="-blank">DEMO</a>
+                                        <a href="https://github.com/leechanggi/ilyang" class="row6-btn-repos" target="-blank">REPOS</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -728,8 +787,27 @@
                         <div class="section6-4-txt cardTxt">
                             <div>
                                 <h4>한국직업전문학교 모바일 리뉴얼</h4>
-                                <p class="txt-section1"></p>
-                                <p class="txt-section2"></p>
+                                <ul class="txt-section1">
+                                    <li><span>Viewport</span>반응형</li>
+                                    <li><span>IE support</span>IE9+</li>
+                                    <li class="row6-text-section1-palette">
+                                        <span>Palette</span>
+                                        <ul>
+                                            <li class="palette-items"></li>
+                                            <li class="palette-items"></li>
+                                            <li class="palette-items"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="row6-text-section1-txtarea">
+                                        HTML, CSS, JS, Jquery, slick.js를 사용해 한국직업전문학교 홈페이지 페이지의 모바일 버전을 리뉴얼 하였습니다.
+                                    </li>
+                                </ul>
+                                <ul class="txt-section2">
+                                    <li class="row6-text-section2-button">
+                                        <a href="http://lxyex1379.dothome.co.kr/hanguk/" class="row6-btn-demo" target="-blank">DEMO</a>
+                                        <a href="https://github.com/leechanggi/hanguk" class="row6-btn-repos" target="-blank">REPOS</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -740,8 +818,28 @@
                         <div class="section6-5-txt cardTxt">
                             <div>
                                 <h4>모두투어 모바일 리뉴얼</h4>
-                                <p class="txt-section1"></p>
-                                <p class="txt-section2"></p>
+                                <ul class="txt-section1">
+                                    <li><span>Viewport</span>반응형</li>
+                                    <li><span>IE support</span>IE9+</li>
+                                    <li class="row6-text-section1-palette">
+                                        <span>Palette</span>
+                                        <ul>
+                                            <li class="palette-items"></li>
+                                            <li class="palette-items"></li>
+                                            <li class="palette-items"></li>
+                                            <li class="palette-items"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="row6-text-section1-txtarea">
+                                        HTML, CSS, JS, Jquery, slick.js를 사용해 모두투어 홈페이지 페이지의 모바일 버전을 리뉴얼 하였습니다.
+                                    </li>
+                                </ul>
+                                <ul class="txt-section2">
+                                    <li class="row6-text-section2-button">
+                                        <a href="http://lxyex1379.dothome.co.kr/modu/" class="row6-btn-demo" target="-blank">DEMO</a>
+                                        <a href="https://github.com/leechanggi/modu_mobile" class="row6-btn-repos" target="-blank">REPOS</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -752,15 +850,35 @@
                         <div class="section6-6-txt cardTxt">
                             <div>
                                 <h4>웹접근성 연구소 메인페이지</h4>
-                                <p class="txt-section1"></p>
-                                <p class="txt-section2"></p>
+                                <ul class="txt-section1">
+                                    <li><span>Viewport</span>반응형</li>
+                                    <li><span>IE support</span>IE9+</li>
+                                    <li class="row6-text-section1-palette">
+                                        <span>Palette</span>
+                                        <ul>
+                                            <li class="palette-items"></li>
+                                            <li class="palette-items"></li>
+                                            <li class="palette-items"></li>
+                                            <li class="palette-items"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="row6-text-section1-txtarea">
+                                        HTML, CSS를 사용해 웹접근성 연구소 메인페이지를 제작하였습니다.
+                                    </li>
+                                </ul>
+                                <ul class="txt-section2">
+                                    <li class="row6-text-section2-button">
+                                        <a href="http://lxyex1379.dothome.co.kr/wah/" class="row6-btn-demo" target="-blank">DEMO</a>
+                                        <a href="https://github.com/leechanggi/wah" class="row6-btn-repos" target="-blank">REPOS</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row7-wrap">
+        <div class="row7-wrap" id="row7-wrap">
             <div class="row7">
                 <div class="row7-title">
                     <h2>Contact Info<span>.</span></h2>
